@@ -1,0 +1,243 @@
+{
+  "version": 1,
+  "jobs": {
+    "КОМ": [
+      {
+        "id": "captain",
+        "ru": "Капитан"
+      },
+      {
+        "id": "head_of_personnel",
+        "ru": "Глава персонала"
+      },
+      {
+        "id": "head_of_security",
+        "ru": "Глава Службы Безопасности"
+      },
+      {
+        "id": "chief_engineer",
+        "ru": "Старший инженер"
+      },
+      {
+        "id": "research_director",
+        "ru": "Научный руководитель"
+      },
+      {
+        "id": "chief_medical_officer",
+        "ru": "Главный врач"
+      },
+      {
+        "id": "quartermaster",
+        "ru": "Квартирмейстер"
+      },
+      {
+        "id": "internal_affairs_agent",
+        "ru": "Агент внутренних дел"
+      }
+    ],
+    "СБ": [
+      {
+        "id": "head_of_security",
+        "ru": "Глава Службы Безопасности"
+      },
+      {
+        "id": "warden",
+        "ru": "Смотритель"
+      },
+      {
+        "id": "security_officer",
+        "ru": "Офицер Службы Безопасности"
+      },
+      {
+        "id": "detective",
+        "ru": "Детектив"
+      },
+      {
+        "id": "security_pilot",
+        "ru": "Пилот Службы Безопасности"
+      },
+      {
+        "id": "security_cadet",
+        "ru": "Кадет Службы Безопасности"
+      }
+    ],
+    "МЕД": [
+      {
+        "id": "chief_medical_officer",
+        "ru": "Главный врач"
+      },
+      {
+        "id": "chemist",
+        "ru": "Химик"
+      },
+      {
+        "id": "medical_doctor",
+        "ru": "Врач"
+      },
+      {
+        "id": "paramedic",
+        "ru": "Парамедик"
+      },
+      {
+        "id": "psychologist",
+        "ru": "Психолог"
+      },
+      {
+        "id": "medical_intern",
+        "ru": "Интерн"
+      }
+    ],
+    "НИО": [
+      {
+        "id": "research_director",
+        "ru": "Научный руководитель"
+      },
+      {
+        "id": "scientist",
+        "ru": "Учёный"
+      },
+      {
+        "id": "research_assistant",
+        "ru": "Научный ассистент"
+      },
+      {
+        "id": "roboticist",
+        "ru": "Робототехник"
+      }
+    ],
+    "ИНЖ": [
+      {
+        "id": "chief_engineer",
+        "ru": "Старший инженер"
+      },
+      {
+        "id": "atmospheric_technician",
+        "ru": "Атмосферный техник"
+      },
+      {
+        "id": "station_engineer",
+        "ru": "Инженер"
+      },
+      {
+        "id": "technical_assistant",
+        "ru": "Технический ассистент"
+      }
+    ],
+    "СНБ": [
+      {
+        "id": "quartermaster",
+        "ru": "Квартирмейстер"
+      },
+      {
+        "id": "salvage_specialist",
+        "ru": "Утилизатор"
+      },
+      {
+        "id": "cargo_technician",
+        "ru": "Грузчик"
+      }
+    ],
+    "СРВ": [
+      {
+        "id": "head_of_personnel",
+        "ru": "Глава персонала"
+      },
+      {
+        "id": "chef",
+        "ru": "Шеф-повар"
+      },
+      {
+        "id": "botanist",
+        "ru": "Ботаник"
+      },
+      {
+        "id": "bartender",
+        "ru": "Бармен"
+      },
+      {
+        "id": "service_worker",
+        "ru": "Сервисный работник"
+      },
+      {
+        "id": "janitor",
+        "ru": "Уборщик"
+      },
+      {
+        "id": "librarian",
+        "ru": "Библиотекарь"
+      },
+      {
+        "id": "chaplain",
+        "ru": "Священник"
+      },
+      {
+        "id": "reporter",
+        "ru": "Репортёр"
+      },
+      {
+        "id": "musician",
+        "ru": "Музыкант"
+      },
+      {
+        "id": "passenger",
+        "ru": "Пассажир"
+      },
+      {
+        "id": "mime",
+        "ru": "Мим"
+      },
+      {
+        "id": "clown",
+        "ru": "Клоун"
+      }
+    ],
+    "ЮР": [
+      {
+        "id": "internal_affairs_agent",
+        "ru": "Агент внутренних дел"
+      },
+      {
+        "id": "magistrate",
+        "ru": "Магистрат"
+      },
+      {
+        "id": "lawyer",
+        "ru": "Адвокат"
+      }
+    ],
+    "ЦК": [
+      {
+        "id": "centcom_representative",
+        "ru": "Представитель Центрального Командования"
+      },
+      {
+        "id": "centcom_operator",
+        "ru": "Оператор Центрального Командования"
+      },
+      {
+        "id": "cbrn_specialist",
+        "ru": "Специалист РХБЗЗ"
+      },
+      {
+        "id": "ert_officer",
+        "ru": "Офицер ОБР"
+      },
+      {
+        "id": "death_squad_officer",
+        "ru": "Офицер Эскадрона смерти"
+      },
+      {
+        "id": "magistrate",
+        "ru": "Магистрат"
+      },
+      {
+        "id": "blueshield_officer",
+        "ru": "Офицер Синего Щита"
+      },
+      {
+        "id": "nanotrasen_representative",
+        "ru": "Представитель NanoTrasen"
+      }
+    ]
+  }
+}
