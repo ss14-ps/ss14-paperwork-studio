@@ -14,7 +14,7 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]Объект NT: {{field:station|Объект / станция|Station XX-000}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color] [bold]Кодификация: {{field:department_code|Кодификация отдела|КОД-КОД}}[/bold]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|Объект / станция|Station XX-000}} {{field:department_code|Кодификация отдела|КОД-КОД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
