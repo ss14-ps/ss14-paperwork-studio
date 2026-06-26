@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="dark">
 <title>SS14 Paperwork Studio v1.11</title>
+<script>
+(()=>{try{const theme=localStorage.getItem("ss14-visual-theme")||"archive";document.documentElement.dataset.theme=["archive","minimal","retro"].includes(theme)?theme:"archive"}catch{document.documentElement.dataset.theme="archive"}document.documentElement.classList.add("app-booting")})();
+</script>
 <style>
 :root{
  --bg:#171815;--panel:#20211d;--panel-alt:#262721;--panel-dark:#191a17;
@@ -19,6 +22,8 @@ button,input,textarea,select{font:inherit;color:inherit}
 button{cursor:pointer}
 button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:1px solid var(--brass);outline-offset:1px}
 [hidden]{display:none!important}
+html.app-booting body{visibility:hidden}
+html.app-booting *,html.theme-switching *{transition:none!important;animation:none!important}
 
 .topbar{height:56px;display:flex;align-items:center;gap:12px;padding:0 14px;background:#181916;border-bottom:1px solid #625b4b}
 .logo{width:39px;height:30px;display:grid;place-items:center;border:2px solid var(--red);color:#eadfcb;font:800 10px ui-monospace,"Liberation Mono",monospace;letter-spacing:.14em}
@@ -2370,14 +2375,18 @@ deleteNamedDraft=function(id){savedDrafts=savedDrafts.filter(d=>d.id!==id);local
 
 
 // Theme selection: archive is the default; minimal removes secondary visual detail.
-let visualTheme=localStorage.getItem("ss14-visual-theme")||"archive";
+let visualTheme=document.documentElement.dataset.theme||"archive";
 function applyVisualTheme(theme){
  visualTheme=["archive","minimal","retro"].includes(theme)?theme:"archive";
- document.documentElement.dataset.theme=visualTheme;
+ const root=document.documentElement;
+ root.classList.add("theme-switching");
+ root.dataset.theme=visualTheme;
  localStorage.setItem("ss14-visual-theme",visualTheme);
  const select=document.getElementById("themeSelect");if(select)select.value=visualTheme;
+ requestAnimationFrame(()=>requestAnimationFrame(()=>root.classList.remove("theme-switching")));
 }
 applyVisualTheme(visualTheme);
+function revealApp(){document.documentElement.classList.remove("app-booting","theme-switching")}
 let keySoundsEnabled=localStorage.getItem("ss14-key-sounds")==="on";
 function applyKeySoundToggle(){
  const button=document.getElementById("keySoundToggle");if(!button)return;
@@ -2482,7 +2491,7 @@ document.addEventListener("keydown",event=>{
  if((event.ctrlKey||event.metaKey)&&((event.key.toLowerCase()==="y"||event.code==="KeyY")||(event.shiftKey&&(event.key.toLowerCase()==="z"||event.code==="KeyZ")))){event.preventDefault();redoChange()}
  if((event.ctrlKey||event.metaKey)&&event.key.toLowerCase()==="s"){event.preventDefault();saveNamedDraft()}
 });
-loadInitial();renderAll();updateDraftIndicator();applyPreviewZoom(previewZoom);resetHistory();
+loadInitial();
 
 /* v1.10 catalog and participant system */
 
@@ -2832,7 +2841,7 @@ const previousRenderAll=renderAll;
 renderAll=function(){previousRenderAll();bindParticipantPanel();renderBuildBadge()};
 setTimeout(()=>{renderBuildBadge();bindParticipantPanel()},0);
 
-Promise.all([loadProfilesFromFile(),loadExternalData(),loadDraftsFromFile()]).then(()=>{localStorage.setItem("ss14-character-profiles",JSON.stringify(characterProfiles));const untouched=!Object.values(current.values||{}).some(value=>String(value||"").trim());if(untouched&&currentPresetId){const preset=getPreset(currentPresetId);if(preset)current=clone({name:preset.name,variants:preset.variants,values:{},profileId:null})}repairTruncatedNtHeaders();renderAll();resetHistory()});
+Promise.all([loadProfilesFromFile(),loadExternalData(),loadDraftsFromFile()]).then(()=>{localStorage.setItem("ss14-character-profiles",JSON.stringify(characterProfiles));const untouched=!Object.values(current.values||{}).some(value=>String(value||"").trim());if(untouched&&currentPresetId){const preset=getPreset(currentPresetId);if(preset)current=clone({name:preset.name,variants:preset.variants,values:{},profileId:null})}repairTruncatedNtHeaders();renderAll();updateDraftIndicator();resetHistory();revealApp()}).catch(error=>{console.error(error);renderAll();updateDraftIndicator();resetHistory();revealApp()});
 </script>
 </body>
 </html>
