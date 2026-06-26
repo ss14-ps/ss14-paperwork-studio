@@ -1,46 +1,21 @@
-# SS14 Paperwork Studio — GitHub Pages
+# SS14 Paperwork Studio
 
-Готовая статическая сборка. Данные пользователя сохраняются локально в браузере.
+SS14 Paperwork Studio is a static browser tool for filling, editing, previewing, and copying Space Station 14 paperwork. It includes a catalog of NanoTrasen-style forms, character profiles, role assignment, draft storage, and SS14 markup preview.
 
-## Публикация
+User data stays in the browser through `localStorage`. The app can be hosted as plain static files, including GitHub Pages.
 
-1. Создайте пустой репозиторий на GitHub.
-2. Загрузите **содержимое этой папки** в корень репозитория.
-3. Откройте **Settings → Pages**.
-4. Выберите **Deploy from a branch**, ветку **main**, папку **/(root)**.
-5. Нажмите **Save**.
+## Recent Changes
 
-Сайт будет доступен по адресу `https://ВАШ-ЛОГИН.github.io/ИМЯ-РЕПОЗИТОРИЯ/`.
+- Improved desktop visual hierarchy and simplified form status display.
+- Added clearer, form-specific participant roles.
+- Cleaned up field labels and reduced repeated helper text across forms.
+- Added live participant chips for manually typed field values.
+- Added a Retro 98 theme with classic controls and wiki-hosted SS14 images.
+- Fixed SS14 formatting tags inside field previews.
+- Corrected several form templates with reused or unclear person fields.
 
-## Хранение данных
+## Files
 
-Персонажи, черновики, пользовательские шаблоны, избранное и настройки хранятся в `localStorage` текущего браузера. Для переноса используйте встроенный импорт/экспорт.
-
-## Дополнительные формы
-
-В сборку добавлены 12 адаптированных форм: назначение ВрИО главы, перевод на другую должность, групповой доступ, замена и первичная выдача КПК/ID-карты, аварийные карты СБ, анонимное сообщение, заявление о нарушении СРП, запрос оригиналов, приказ по цели станции, акт передачи оборудования и групповое разрешение на передвижение.
-
-
-## v1.10
-Добавлены ролевое назначение персонажей, произвольные профессии и отделы, а также формы расследования и юридические документы.
-
-
-## v1.10
-- Каталог из 85 форм встроен в страницу и больше не зависит от загрузки `forms.json`.
-- Понятные карточки участников документа вместо панели «Назначить роль».
-- Выбор персонажа заполняет только выбранную роль.
-- Произвольные отделы и должности вводятся обычным текстом с подсказками.
-
-
-## v1.10
-- Компактная строка участников вместо большой панели.
-- Каталог персонажей открывается поверх редактора и поддерживает поиск.
-- Роли документа остаются раздельными; списковые роли показывают краткое количество участников.
-- Новые формы приведены к оформлению старого архива.
-- Длинные тире в новых формах заменены на `--`.
-
-
-## v1.12
-- Исправлена стандартная пятистрочная шапка NanoTrasen во всех обычных формах.
-- Объект/станция и код отдела снова находятся на одной строке.
-- Убраны подписи-предпросмотры под названиями блоков в ручном редакторе.
+- `index.html` -- the full static app.
+- `data/forms.json` -- built-in form catalog.
+- `data/departments.json`, `data/jobs.json`, `data/clauses.json`, `data/field-presets.json` -- supporting data.
