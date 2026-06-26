@@ -1391,6 +1391,7 @@ function inlineFieldPlaceholder(source,offset,key,label,fallback){
 }
 function renderInlineMarkup(value){
  let s=esc(value);
+ s=s.replace(/\r\n?/g,"\n");
  s=s.replace(/\[color=([^\]]+)\]([\s\S]*?)\[\/color\]/gi,(match,color,content)=>{
   const safe=String(color||"").replace(/&quot;|["'`;<>]/g,"").trim();
   return safe?`<span style="color:${safe}">${content}</span>`:content;
@@ -1402,7 +1403,8 @@ function renderInlineMarkup(value){
  .replace(/\[head=1\]([\s\S]*?)\[\/head\]/gi,"<strong>$1</strong>")
  .replace(/\[head=2\]([\s\S]*?)\[\/head\]/gi,"<strong>$1</strong>")
  .replace(/\[head=3\]([\s\S]*?)\[\/head\]/gi,"<strong>$1</strong>")
- .replace(/\[\/(?:italic|color|bold|mono|head)\]/gi,"");
+ .replace(/\[\/(?:italic|color|bold|mono|head)\]/gi,"")
+ .replace(/\n/g,"<br>");
  return s;
 }
 function renderMarkup(text){
@@ -1591,7 +1593,7 @@ function currentPreset(){
  return getPreset(currentPresetId);
 }
 function fieldNeedsTextarea(field){
- return /(содержание|описание|причина|перечень|работ|мероприят|результат|обращени|нарушени|заключени|оборудован|снаряжен|доступ|состояни|детал|content|details|reason|result|list)/i.test(field.label+" "+field.key);
+ return /(содержание|описание|причина|перечень|работ|мероприят|результат|обращени|нарушени|заключени|оборудован|снаряжен|доступ|состояни|детал|свидетел|подозреваем|потерпевш|присутствующ|участник|эксперт|content|details|reason|result|list|witness|suspect|victim|present_people|participant|expert)/i.test(field.label+" "+field.key);
 }
 function fieldGroup(field){
  return REQUIRED_KEYS.includes(field.key)?"main":"document";
