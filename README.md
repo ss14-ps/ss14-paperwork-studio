@@ -1,21 +1,21 @@
 # SS14 Paperwork Studio
 
-SS14 Paperwork Studio is a static browser tool for filling, editing, previewing, and copying Space Station 14 paperwork. It includes a catalog of NanoTrasen-style forms, character profiles, role assignment, draft storage, and SS14 markup preview.
+SS14 Paperwork Studio -- статический браузерный инструмент для заполнения, редактирования, предпросмотра и копирования документов Space Station 14. Внутри есть каталог форм в стиле NanoTrasen, профили персонажей, назначение ролей, черновики и предпросмотр SS14-разметки.
 
-User data stays in the browser through `localStorage`. The app can be hosted as plain static files, including GitHub Pages.
+Данные пользователя хранятся в браузере через `localStorage`. Приложение можно открыть как обычные статические файлы или разместить на GitHub Pages.
 
-## Recent Changes
+## Последние изменения
 
-- Improved desktop visual hierarchy and simplified form status display.
-- Added clearer, form-specific participant roles.
-- Cleaned up field labels and reduced repeated helper text across forms.
-- Added live participant chips for manually typed field values.
-- Added a Retro 98 theme with classic controls and wiki-hosted SS14 images.
-- Fixed SS14 formatting tags inside field previews.
-- Corrected several form templates with reused or unclear person fields.
+- Улучшена визуальная иерархия рабочего экрана.
+- Упрощены поля и убраны лишние статусы заполнения.
+- Добавлены понятные роли участников для конкретных форм.
+- Карточки участников обновляются при ручном вводе значений.
+- Добавлена тема Retro 98 с классическими элементами интерфейса и изображениями из SS14 wiki.
+- Исправлен предпросмотр тегов SS14-разметки внутри заполненных полей.
+- Исправлены формы с неясными или повторно использованными полями участников.
 
-## Files
+## Файлы
 
-- `index.html` -- the full static app.
-- `data/forms.json` -- built-in form catalog.
-- `data/departments.json`, `data/jobs.json`, `data/clauses.json`, `data/field-presets.json` -- supporting data.
+- `index.html` -- основное статическое приложение.
+- `data/forms.json` -- встроенный каталог форм.
+- `data/departments.json`, `data/jobs.json`, `data/clauses.json`, `data/field-presets.json` -- вспомогательные данные.
