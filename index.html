@@ -771,6 +771,21 @@ html[data-theme="retro"] .role-picker-item strong{color:#000;font-family:Tahoma,
 html[data-theme="retro"] .result-desc,
 html[data-theme="retro"] .participant-chip.empty .participant-chip-value,
 html[data-theme="retro"] .role-picker-item small{color:#404040}
+html[data-theme="retro"] .profile-modal-head span,
+html[data-theme="retro"] .profile-modal-head h3{color:#000;font-family:Tahoma,"MS Sans Serif",Arial,sans-serif;letter-spacing:0}
+html[data-theme="retro"] .profile-head-actions button,
+html[data-theme="retro"] .profile-head-actions button:last-child,
+html[data-theme="retro"] .profile-actions button{
+ background:#c0c0c0!important;color:#000!important;border:0!important;
+ box-shadow:inset 1px 1px #fff,inset -1px -1px #404040!important;
+ font:11px Tahoma,"MS Sans Serif",Arial,sans-serif;
+}
+html[data-theme="retro"] .profile-head-actions button:active,
+html[data-theme="retro"] .profile-actions button:active{box-shadow:inset -1px -1px #fff,inset 1px 1px #404040!important}
+html[data-theme="retro"] .profile-row{background:#d4d0c8!important;color:#000!important;padding:10px;box-shadow:inset 1px 1px #fff,inset -1px -1px #808080}
+html[data-theme="retro"] .profile-file strong{color:#000!important;font:700 11px Tahoma,"MS Sans Serif",Arial,sans-serif}
+html[data-theme="retro"] .profile-file small{color:#404040!important;font:10px Tahoma,"MS Sans Serif",Arial,sans-serif}
+html[data-theme="retro"] .profile-actions .delete{color:#800000!important}
 html[data-theme="retro"] .dossier-kicker span{background:#000080;color:#fff;border:0;padding:3px 7px;box-shadow:inset 1px 1px #1084d0,inset -1px -1px #000040}
 html[data-theme="retro"] .fill-workspace,
 html[data-theme="retro"] .participants-list,
@@ -1833,7 +1848,7 @@ function copyEditorToolbarHtml(){
   ["B","[bold]","[/bold]","Жирный"],["I","[italic]","[/italic]","Курсив"],["BI","[bolditalic]","[/bolditalic]","Жирный курсив"],["M","[mono]","[/mono]","Моноширинный"],
   ["H1","[head=1]","[/head]","Большой заголовок"],["H2","[head=2]","[/head]","Средний заголовок"],["H3","[head=3]","[/head]","Малый заголовок"]
  ];
- return `<div class="copy-formatbar">${buttons.map(x=>`<button type="button" title="${x[3]}" data-copy-open="${esc(x[1])}" data-copy-close="${esc(x[2])}">${x[0]}</button>`).join("")}<button type="button" data-copy-color>Цвет</button><button type="button" data-copy-phrases>Фразы</button></div>`;
+ return `<div class="copy-formatbar">${buttons.map(x=>`<button type="button" title="${x[3]}" data-copy-open="${esc(x[1])}" data-copy-close="${esc(x[2])}">${x[0]}</button>`).join("")}<button type="button" data-copy-color>Цвет</button><button type="button" data-copy-phrases>Формулировки</button></div>`;
 }
 function wrapTextareaSelection(textarea,open,close){
  const start=textarea.selectionStart,end=textarea.selectionEnd,selected=textarea.value.slice(start,end);
@@ -2183,7 +2198,7 @@ function formatBarHtml(key){
   ["B","[bold]","[/bold]","Жирный"],["I","[italic]","[/italic]","Курсив"],["BI","[bolditalic]","[/bolditalic]","Жирный курсив"],["M","[mono]","[/mono]","Моноширинный"],
   ["H1","[head=1]","[/head]","Большой заголовок"],["H2","[head=2]","[/head]","Средний заголовок"],["H3","[head=3]","[/head]","Малый заголовок"]
  ];
- return `<div class="field-formatbar">${buttons.map(x=>`<button type="button" title="${x[3]}" data-field-format="${esc(key)}" data-open="${esc(x[1])}" data-close="${esc(x[2])}">${x[0]}</button>`).join("")}<button type="button" class="format-wide" data-field-color="${esc(key)}">Цвет</button><button type="button" class="format-wide" data-field-phrases="${esc(key)}">Фразы</button></div>`;
+ return `<div class="field-formatbar">${buttons.map(x=>`<button type="button" title="${x[3]}" data-field-format="${esc(key)}" data-open="${esc(x[1])}" data-close="${esc(x[2])}">${x[0]}</button>`).join("")}<button type="button" class="format-wide" data-field-color="${esc(key)}">Цвет</button></div>`;
 }
 renderFillControl=function(field){
  if(field.key==="department_code")return `<div class="fill-control"><label>${esc(field.label)}</label><button class="fill-code-button" data-open-department>${esc(departmentCodeValue())}</button></div>`;
@@ -2230,7 +2245,6 @@ renderFillWorkspace=function(){
  document.querySelectorAll("#fillFields [data-save-field-preset]").forEach(button=>button.onclick=async()=>{const key=button.dataset.saveFieldPreset,value=String(current.values[key]||"").trim();if(!value)return;const values=customFieldPresets[key]||[];if(!values.includes(value))customFieldPresets[key]=[...values,value];await persistUserContent();renderFillWorkspace();showToast("Пресет сохранён")});
  document.querySelectorAll("[data-field-format]").forEach(b=>b.onclick=()=>wrapFieldSelection(b.dataset.fieldFormat,b.dataset.open,b.dataset.close));
  document.querySelectorAll("[data-field-color]").forEach(b=>b.onclick=()=>openFieldColor(b.dataset.fieldColor));
- document.querySelectorAll("[data-field-phrases]").forEach(b=>b.onclick=()=>openFieldPhrases(b.dataset.fieldPhrases));
  const titleBlock=blocks().find(b=>b.type==="title"),textBlock=blocks().find(b=>b.type==="text");
  document.getElementById("wordingActions").innerHTML=`${titleBlock?`<button data-edit-title="${esc(titleBlock.id)}">✎ Изменить название в бланке</button>`:""}${textBlock?`<button data-edit-text="${esc(textBlock.id)}">✎ Изменить основной текст</button>`:""}`;
  document.querySelectorAll("[data-edit-title],[data-edit-text]").forEach(button=>button.onclick=()=>editCopyBlock(button.dataset.editTitle||button.dataset.editText));
@@ -2279,7 +2293,7 @@ function openBlockLibrary(){
 
 renderEditor=function(){
  const root=document.getElementById("editor"),b=blocks().find(x=>x.id===selectedBlockId);if(!b){root.innerHTML='<div class="empty">Выберите блок для редактирования</div>';return}
- root.innerHTML=`<label>Название блока</label><input id="blockName" value="${esc(b.labelRu||"")}"><div class="toolbar"><button data-tag="[bold]|[/bold]"><b>B</b></button><button data-tag="[italic]|[/italic]"><i>I</i></button><button data-tag="[bolditalic]|[/bolditalic]"><b><i>BI</i></b></button><button data-tag="[mono]|[/mono]">Mono</button><button data-tag="[head=1]|[/head]">H1</button><button data-tag="[head=2]|[/head]">H2</button><button data-tag="[head=3]|[/head]">H3</button><button data-tag="[color=#b8972d]|[/color]">Цвет</button><button id="insertField">＋ Поле</button><button id="manualPhrases">Фразы</button></div><label>Содержимое</label><textarea id="blockContent" spellcheck="false">${esc(b.content)}</textarea><div class="editor-actions"><button id="duplicateBlock">Дублировать</button><button id="saveBlockPreset">Сохранить блок</button><button class="danger" id="removeBlock">Удалить</button></div><div class="quick-fields"><div class="quick-head"><strong>Быстрые поля</strong><span>Значения подставляются во все блоки</span></div><div class="field-list" id="fieldList"></div></div>`;
+ root.innerHTML=`<label>Название блока</label><input id="blockName" value="${esc(b.labelRu||"")}"><div class="toolbar"><button data-tag="[bold]|[/bold]"><b>B</b></button><button data-tag="[italic]|[/italic]"><i>I</i></button><button data-tag="[bolditalic]|[/bolditalic]"><b><i>BI</i></b></button><button data-tag="[mono]|[/mono]">Mono</button><button data-tag="[head=1]|[/head]">H1</button><button data-tag="[head=2]|[/head]">H2</button><button data-tag="[head=3]|[/head]">H3</button><button data-tag="[color=#b8972d]|[/color]">Цвет</button><button id="insertField">＋ Поле</button><button id="manualPhrases">Формулировки</button></div><label>Содержимое</label><textarea id="blockContent" spellcheck="false">${esc(b.content)}</textarea><div class="editor-actions"><button id="duplicateBlock">Дублировать</button><button id="saveBlockPreset">Сохранить блок</button><button class="danger" id="removeBlock">Удалить</button></div><div class="quick-fields"><div class="quick-head"><strong>Быстрые поля</strong><span>Значения подставляются во все блоки</span></div><div class="field-list" id="fieldList"></div></div>`;
  document.getElementById("blockName").oninput=e=>{b.labelRu=e.target.value;saveState();renderBlocks()};const ta=document.getElementById("blockContent");ta.oninput=e=>{b.content=e.target.value;saveState();renderBlocks();renderPreviewOnly();renderFields()};document.querySelectorAll("[data-tag]").forEach(btn=>btn.onclick=()=>{const [a,z]=btn.dataset.tag.split("|");insertTag(a,z)});document.getElementById("insertField").onclick=insertField;document.getElementById("manualPhrases").onclick=openClausesModal;document.getElementById("duplicateBlock").onclick=duplicateSelectedBlock;document.getElementById("saveBlockPreset").onclick=saveSelectedBlockPreset;document.getElementById("removeBlock").onclick=()=>removeBlock(b.id);renderFields();
 };
 
@@ -2707,7 +2721,6 @@ renderFillWorkspace=function(){
  document.querySelectorAll("#fillFields [data-save-field-preset]").forEach(button=>button.onclick=async()=>{const key=button.dataset.saveFieldPreset,value=String(current.values[key]||"").trim();if(!value)return;const values=customFieldPresets[key]||[];if(!values.includes(value))customFieldPresets[key]=[...values,value];await persistUserContent();renderFillWorkspace();showToast("Пресет сохранён")});
  document.querySelectorAll("[data-field-format]").forEach(b=>b.onclick=()=>wrapFieldSelection(b.dataset.fieldFormat,b.dataset.open,b.dataset.close));
  document.querySelectorAll("[data-field-color]").forEach(b=>b.onclick=()=>openFieldColor(b.dataset.fieldColor));
- document.querySelectorAll("[data-field-phrases]").forEach(b=>b.onclick=()=>openFieldPhrases(b.dataset.fieldPhrases));
  const titleBlock=blocks().find(b=>b.type==="title"),textBlock=blocks().find(b=>b.type==="text");
  document.getElementById("wordingActions").innerHTML=`${titleBlock?`<button data-edit-title="${esc(titleBlock.id)}">✎ Изменить название в бланке</button>`:""}${textBlock?`<button data-edit-text="${esc(textBlock.id)}">✎ Изменить основной текст</button>`:""}`;
  document.querySelectorAll("[data-edit-title],[data-edit-text]").forEach(button=>button.onclick=()=>editCopyBlock(button.dataset.editTitle||button.dataset.editText));
