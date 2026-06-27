@@ -562,6 +562,16 @@ function setPaperFieldState(el,value){
  el.classList.toggle("filled",filled);
  el.classList.toggle("placeholder",!filled);
 }
+let activePaperFieldKey="";
+function setActivePaperField(el){
+ document.querySelectorAll(".paper-field.is-editing").forEach(item=>item.classList.remove("is-editing"));
+ activePaperFieldKey=el?.dataset?.fieldKey||"";
+ if(el)el.classList.add("is-editing");
+}
+function clearActivePaperField(){
+ activePaperFieldKey="";
+ document.querySelectorAll(".paper-field.is-editing").forEach(item=>item.classList.remove("is-editing"));
+}
 function updateField(key,value){
  current.values[key]=value;
  saveState();
@@ -659,7 +669,7 @@ function renderMarkup(text){
    }else{
      const filled=val!==undefined&&String(val).trim()!=="";
      const shown=String(filled?val:f.fallback||"");
-     input=`<span role="textbox" contenteditable="true" spellcheck="false" class="paper-field ${filled?"filled":"placeholder"} ${required&&!shown.trim()?"missing":""}" data-field-key="${esc(f.key)}" data-placeholder="${esc(f.placeholder||f.label)}" title="${esc(f.label)}">${renderInlineMarkup(shown)}</span>`;
+     input=`<span role="textbox" contenteditable="true" spellcheck="false" class="paper-field ${filled?"filled":"placeholder"} ${activePaperFieldKey===f.key?"is-editing":""} ${required&&!shown.trim()?"missing":""}" data-field-key="${esc(f.key)}" data-placeholder="${esc(f.placeholder||f.label)}" title="${esc(f.label)}">${renderInlineMarkup(shown)}</span>`;
    }
    s=s.replace(`@@FIELD_${i}@@`,input);
  });
@@ -687,8 +697,12 @@ function renderPreviewOnly(){
      updateField(key,value);
      setPaperFieldState(input,value);
    });
-   input.addEventListener("blur",commit);
+   input.addEventListener("blur",event=>{
+     commit();
+     if(document.hasFocus()&&!event.relatedTarget?.closest?.(".paper-field"))clearActivePaperField();
+   });
    input.addEventListener("focus",()=>{
+     setActivePaperField(input);
      const range=document.createRange(),selection=getSelection();
      range.selectNodeContents(input);selection.removeAllRanges();selection.addRange(range);
    });
@@ -849,11 +863,24 @@ function fieldPresetFor(field){
  let preset=FIELD_PRESETS.find(item=>(item.match||[]).some(match=>text.includes(normalizeSearch(match))));
  return preset||null;
 }
+function inlineOptionsForField(field){
+ const fallback=String(field.fallback||"").trim();
+ if(!fallback.includes("/")||/https?:\/\//i.test(fallback))return [];
+ const parts=fallback.split(/\s+\/\s+/).map(item=>item.trim()).filter(Boolean);
+ if(parts.length<2||parts.some(item=>item.length>56))return [];
+ return [...new Set(parts)].map(value=>({ru:value,en:value,inline:true}));
+}
+function fieldAllowsMultipleChoices(field,preset=null){
+ if(preset?.multi===true)return true;
+ const text=normalizeSearch(`${field.key} ${field.label}`);
+ return /(список|перечень|доступы|снаряжение|оборудование|предметы|улики|свидетели|подозреваемые|потерпевшие|присутствующие|эксперты|methods|items|access|equipment|witnesses|suspects|victims|list)/.test(text);
+}
 function presetValuesForField(field){
- const preset=fieldPresetFor(field);if(!preset)return {preset:null,values:[]};
- let values=preset.values||[];
+ const preset=fieldPresetFor(field);
+ let values=preset?.values||[];
+ const inline=inlineOptionsForField(field);
  const custom=(customFieldPresets[field.key]||[]).map(value=>({ru:value,en:value,custom:true}));
- return {preset,values:[...values,...custom]};
+ return {preset,values:[...values,...inline,...custom],multi:fieldAllowsMultipleChoices(field,preset)};
 }
 function clauseTagsForCurrent(){
  const preset=currentPreset();const text=normalizeSearch(`${preset?.name?.ru||""} ${preset?.docType||""}`);const tags=["general"];
@@ -910,7 +937,7 @@ function renderFillWorkspace(){
  const controls=[...document.querySelectorAll("#fillFields [data-fill-key]")];
  controls.forEach((control,index)=>{control.oninput=event=>updateField(event.target.dataset.fillKey,event.target.value);if(control.tagName==="INPUT")control.onkeydown=event=>{if(event.key!=="Enter")return;event.preventDefault();const next=event.shiftKey?controls[index-1]:controls[index+1];if(next)next.focus();else control.blur()}});
  document.querySelectorAll("#fillFields [data-open-department]").forEach(el=>el.onclick=openDepartmentPicker);
- document.querySelectorAll("#fillFields [data-smart-value]").forEach(button=>button.onclick=()=>{const key=button.dataset.smartKey,value=button.dataset.smartValue,multi=button.dataset.smartMulti==="true";if(multi){const existing=String(current.values[key]||"").split(/[,;]+/).map(item=>item.trim()).filter(Boolean);current.values[key]=(existing.includes(value)?existing.filter(item=>item!==value):[...existing,value]).join(", ")}else current.values[key]=value;saveState();renderFillWorkspace();renderPreviewOnly()});
+ document.querySelectorAll("#fillFields [data-smart-value]").forEach(button=>button.onclick=()=>{const key=button.dataset.smartKey,value=button.dataset.smartValue,multi=button.dataset.smartMulti==="true";if(multi){const existing=String(current.values[key]||"").split(/[,;\n]+/).map(item=>item.trim()).filter(Boolean);current.values[key]=(existing.includes(value)?existing.filter(item=>item!==value):[...existing,value]).join(", ")}else current.values[key]=value;saveState();renderFillWorkspace();renderPreviewOnly()});
  document.querySelectorAll("#fillFields [data-save-field-preset]").forEach(button=>button.onclick=async()=>{const key=button.dataset.saveFieldPreset,value=String(current.values[key]||"").trim();if(!value)return;const values=customFieldPresets[key]||[];if(!values.includes(value))customFieldPresets[key]=[...values,value];await persistUserContent();renderFillWorkspace();showToast(t("fieldPresetSaved"))});
  const titleBlock=blocks().find(block=>block.type==="title"),textBlock=blocks().find(block=>block.type==="text");
  document.getElementById("wordingActions").innerHTML=`${titleBlock?`<button data-edit-title="${esc(titleBlock.id)}">✎ ${esc(t("editDocumentTitle"))}</button>`:""}${textBlock?`<button data-edit-text="${esc(textBlock.id)}">✎ ${esc(t("editDocumentText"))}</button>`:""}`;
@@ -919,10 +946,10 @@ function renderFillWorkspace(){
 }
 function renderFillControl(field){
  if(field.key==="department_code")return `<div class="fill-control"><label>${esc(field.label)}</label><button class="fill-code-button" data-open-department>${esc(departmentCodeValue())}</button></div>`;
- const value=current.values[field.key]||"",placeholder=field.fallback||field.label,{preset,values}=presetValuesForField(field);
+ const value=current.values[field.key]||"",placeholder=field.fallback||field.label,{values,multi}=presetValuesForField(field);
  const input=fieldNeedsTextarea(field)?`<textarea data-fill-key="${esc(field.key)}" placeholder="${esc(placeholder)}">${esc(value)}</textarea>`:`<input data-fill-key="${esc(field.key)}" value="${esc(value)}" placeholder="${esc(placeholder)}">`;
- const selected=String(value).split(/[,;]+/).map(item=>item.trim());
- const choices=values.length?`<div class="smart-options">${values.map(option=>{const label=option[lang]||option.ru||option.en;return `<button type="button" class="smart-option ${selected.includes(label)?"on":""}" data-smart-key="${esc(field.key)}" data-smart-value="${esc(label)}" data-smart-multi="${preset?.multi===true}">${esc(label)}</button>`}).join("")}<button type="button" class="smart-option smart-save" data-save-field-preset="${esc(field.key)}">＋</button></div>`:"";
+ const selected=String(value).split(/[,;\n]+/).map(item=>item.trim());
+ const choices=values.length?`<div class="smart-options">${values.map(option=>{const label=option[lang]||option.ru||option.en||String(option);return `<button type="button" class="smart-option ${selected.includes(label)?"on":""}" data-smart-key="${esc(field.key)}" data-smart-value="${esc(label)}" data-smart-multi="${multi===true}">${esc(label)}</button>`}).join("")}<button type="button" class="smart-option smart-save" data-save-field-preset="${esc(field.key)}">＋</button></div>`:"";
  return `<div class="fill-control ${isParticipantField(field)?"participant-field":""}"><label>${esc(field.label)}</label>${input}${choices}</div>`;
 }
 function setBuilderMode(mode){
@@ -1431,11 +1458,11 @@ function formatBarHtml(key){
 }
 renderFillControl=function(field){
  if(field.key==="department_code")return `<div class="fill-control"><label>${esc(field.label)}</label><button class="fill-code-button" data-open-department>${esc(departmentCodeValue())}</button></div>`;
- const value=current.values[field.key]||"",placeholder=field.fallback||field.label,{preset,values}=presetValuesForField(field);
+ const value=current.values[field.key]||"",placeholder=field.fallback||field.label,{values,multi}=presetValuesForField(field);
  const textarea=fieldNeedsTextarea(field);
  const input=textarea?`${formatBarHtml(field.key)}<textarea data-fill-key="${esc(field.key)}" placeholder="${esc(placeholder)}">${esc(value)}</textarea>`:`<input data-fill-key="${esc(field.key)}" value="${esc(value)}" placeholder="${esc(placeholder)}">`;
- const selected=String(value).split(/[,;]+/).map(item=>item.trim());
- const choices=values.length?`<div class="smart-options">${values.map(option=>{const label=option.ru||String(option);return `<button type="button" class="smart-option ${selected.includes(label)?"on":""}" data-smart-key="${esc(field.key)}" data-smart-value="${esc(label)}" data-smart-multi="${preset?.multi===true}">${esc(label)}</button>`}).join("")}<button type="button" class="smart-option smart-save" title="Сохранить значение как пресет" data-save-field-preset="${esc(field.key)}">＋</button></div>`:"";
+ const selected=String(value).split(/[,;\n]+/).map(item=>item.trim());
+ const choices=values.length?`<div class="smart-options">${values.map(option=>{const label=option[lang]||option.ru||option.en||String(option);return `<button type="button" class="smart-option ${selected.includes(label)?"on":""}" data-smart-key="${esc(field.key)}" data-smart-value="${esc(label)}" data-smart-multi="${multi===true}">${esc(label)}</button>`}).join("")}<button type="button" class="smart-option smart-save" title="Сохранить значение как пресет" data-save-field-preset="${esc(field.key)}">＋</button></div>`:"";
  return `<div class="fill-control ${isParticipantField(field)?"participant-field":""}"><label>${esc(field.label)}</label>${input}${choices}</div>`;
 };
 function wrapFieldSelection(key,open,close){
@@ -1470,7 +1497,7 @@ renderFillWorkspace=function(){
  const controls=[...document.querySelectorAll("#fillFields [data-fill-key]")];
  controls.forEach((control,index)=>{control.oninput=e=>{updateField(e.target.dataset.fillKey,e.target.value);renderPreviewOnly()};if(control.tagName==="INPUT")control.onkeydown=e=>{if(e.key!=="Enter")return;e.preventDefault();const next=e.shiftKey?controls[index-1]:controls[index+1];if(next)next.focus();else control.blur()}});
  document.querySelectorAll("#fillFields [data-open-department]").forEach(el=>el.onclick=openDepartmentPicker);
- document.querySelectorAll("#fillFields [data-smart-value]").forEach(button=>button.onclick=()=>{const key=button.dataset.smartKey,value=button.dataset.smartValue,multi=button.dataset.smartMulti==="true";if(multi){const existing=String(current.values[key]||"").split(/[,;]+/).map(x=>x.trim()).filter(Boolean);current.values[key]=(existing.includes(value)?existing.filter(x=>x!==value):[...existing,value]).join(", ")}else current.values[key]=value;saveState();renderFillWorkspace();renderPreviewOnly()});
+ document.querySelectorAll("#fillFields [data-smart-value]").forEach(button=>button.onclick=()=>{const key=button.dataset.smartKey,value=button.dataset.smartValue,multi=button.dataset.smartMulti==="true";if(multi){const existing=String(current.values[key]||"").split(/[,;\n]+/).map(x=>x.trim()).filter(Boolean);current.values[key]=(existing.includes(value)?existing.filter(x=>x!==value):[...existing,value]).join(", ")}else current.values[key]=value;saveState();renderFillWorkspace();renderPreviewOnly()});
  document.querySelectorAll("#fillFields [data-save-field-preset]").forEach(button=>button.onclick=async()=>{const key=button.dataset.saveFieldPreset,value=String(current.values[key]||"").trim();if(!value)return;const values=customFieldPresets[key]||[];if(!values.includes(value))customFieldPresets[key]=[...values,value];await persistUserContent();renderFillWorkspace();showToast("Пресет сохранён")});
  document.querySelectorAll("[data-field-format]").forEach(b=>b.onclick=()=>wrapFieldSelection(b.dataset.fieldFormat,b.dataset.open,b.dataset.close));
  document.querySelectorAll("[data-field-color]").forEach(b=>b.onclick=()=>openFieldColor(b.dataset.fieldColor));
@@ -1956,14 +1983,14 @@ renderFillControl=function(field){
   const value=departmentCodeValue();
   return `<div class="fill-control required filled" data-control-key="${esc(field.key)}"><label><span class="field-done-dot"></span>${esc(field.label)}</label><button class="fill-code-button" data-open-department>${esc(value)}</button></div>`;
  }
- const value=current.values[field.key]||"",placeholder=field.fallback||field.label,{preset,values}=presetValuesForField(field);
+ const value=current.values[field.key]||"",placeholder=field.fallback||field.label,{values,multi}=presetValuesForField(field);
  const required=isRequired(field),filled=String(value).trim()!=="";
  const textarea=fieldNeedsTextarea(field);
  const marker=required?`<span class="${filled?'field-done-dot':'field-required-dot'}"></span>`:"";
  const requiredText="";
  const input=textarea?`${formatBarHtml(field.key)}<textarea data-fill-key="${esc(field.key)}" placeholder="${esc(placeholder)}">${esc(value)}</textarea>`:`<input data-fill-key="${esc(field.key)}" value="${esc(value)}" placeholder="${esc(placeholder)}">`;
- const selected=String(value).split(/[,;]+/).map(item=>item.trim());
- const choices=values.length?`<div class="smart-options">${values.map(option=>{const label=option.ru||String(option);return `<button type="button" class="smart-option ${selected.includes(label)?"on":""}" data-smart-key="${esc(field.key)}" data-smart-value="${esc(label)}" data-smart-multi="${preset?.multi===true}">${esc(label)}</button>`}).join("")}<button type="button" class="smart-option smart-save" title="Сохранить значение как пресет" data-save-field-preset="${esc(field.key)}">＋</button></div>`:"";
+ const selected=String(value).split(/[,;\n]+/).map(item=>item.trim());
+ const choices=values.length?`<div class="smart-options">${values.map(option=>{const label=option[lang]||option.ru||option.en||String(option);return `<button type="button" class="smart-option ${selected.includes(label)?"on":""}" data-smart-key="${esc(field.key)}" data-smart-value="${esc(label)}" data-smart-multi="${multi===true}">${esc(label)}</button>`}).join("")}<button type="button" class="smart-option smart-save" title="Сохранить значение как пресет" data-save-field-preset="${esc(field.key)}">＋</button></div>`:"";
  const classes=["fill-control",required?"required":"",required&&!filled?"missing":"",required&&filled?"filled":"",isParticipantField(field)?"participant-field":""].filter(Boolean).join(" ");
  return `<div class="${classes}" data-control-key="${esc(field.key)}"><label>${marker}<span>${esc(field.label)}</span>${requiredText}</label>${input}${choices}</div>`;
 };
@@ -1991,7 +2018,7 @@ renderFillWorkspace=function(){
  const controls=[...document.querySelectorAll("#fillFields [data-fill-key]")];
  controls.forEach((control,index)=>{control.oninput=e=>{updateField(e.target.dataset.fillKey,e.target.value);renderPreviewOnly()};if(control.tagName==="INPUT")control.onkeydown=e=>{if(e.key!=="Enter")return;e.preventDefault();const next=e.shiftKey?controls[index-1]:controls[index+1];if(next)next.focus();else control.blur()}});
  document.querySelectorAll("#fillFields [data-open-department]").forEach(el=>el.onclick=openDepartmentPicker);
- document.querySelectorAll("#fillFields [data-smart-value]").forEach(button=>button.onclick=()=>{const key=button.dataset.smartKey,value=button.dataset.smartValue,multi=button.dataset.smartMulti==="true";if(multi){const existing=String(current.values[key]||"").split(/[,;]+/).map(x=>x.trim()).filter(Boolean);current.values[key]=(existing.includes(value)?existing.filter(x=>x!==value):[...existing,value]).join(", ")}else current.values[key]=value;saveState();renderFillWorkspace();renderPreviewOnly()});
+ document.querySelectorAll("#fillFields [data-smart-value]").forEach(button=>button.onclick=()=>{const key=button.dataset.smartKey,value=button.dataset.smartValue,multi=button.dataset.smartMulti==="true";if(multi){const existing=String(current.values[key]||"").split(/[,;\n]+/).map(x=>x.trim()).filter(Boolean);current.values[key]=(existing.includes(value)?existing.filter(x=>x!==value):[...existing,value]).join(", ")}else current.values[key]=value;saveState();renderFillWorkspace();renderPreviewOnly()});
  document.querySelectorAll("#fillFields [data-save-field-preset]").forEach(button=>button.onclick=async()=>{const key=button.dataset.saveFieldPreset,value=String(current.values[key]||"").trim();if(!value)return;const values=customFieldPresets[key]||[];if(!values.includes(value))customFieldPresets[key]=[...values,value];await persistUserContent();renderFillWorkspace();showToast("Пресет сохранён")});
  document.querySelectorAll("[data-field-format]").forEach(b=>b.onclick=()=>wrapFieldSelection(b.dataset.fieldFormat,b.dataset.open,b.dataset.close));
  document.querySelectorAll("[data-field-color]").forEach(b=>b.onclick=()=>openFieldColor(b.dataset.fieldColor));

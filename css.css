@@ -13,6 +13,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 [hidden]{display:none!important}
 html.app-booting body{visibility:hidden}
 html.app-booting *,html.theme-switching *{transition:none!important;animation:none!important}
+@keyframes typing-caret{0%,49%{opacity:1}50%,100%{opacity:.18}}
 
 .topbar {
     height:56px;
@@ -1053,6 +1054,25 @@ html.app-booting *,html.theme-switching *{transition:none!important;animation:no
     background: #fff
 }
 
+.paper-field.is-editing {
+    position: relative;
+    z-index: 4;
+    outline: 1px solid #a36d50;
+    background: #fff9ed;
+    color: #2b241e
+}
+
+.paper-field.is-editing::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    margin-left: 3px;
+    background: #8e5c3d;
+    vertical-align: -.12em;
+    animation: typing-caret 1s steps(1, end) infinite
+}
+
 .paper-field.missing {
     border-bottom-color: #d88a2d;
     background: #f1ad451c
@@ -1942,7 +1962,9 @@ html[data-theme="minimal"] .action-chip.active{background:#d8d8d8;color:#222}
 html[data-theme="minimal"] .phrase-hotbar-label::before{background:#888}
 html[data-theme="minimal"] .phrase-hotbar-items button{border-left-color:#666}
 html[data-theme="minimal"] .paper-field{border-bottom-color:#888;background:#8881;color:#444}
-html[data-theme="minimal"] .paper-field:focus{outline-color:#777;background:#fff;color:#222}
+html[data-theme="minimal"] .paper-field:focus,
+html[data-theme="minimal"] .paper-field.is-editing{outline-color:#777;background:#fff;color:#222}
+html[data-theme="minimal"] .paper-field.is-editing::after{background:#333}
 html[data-theme="minimal"] .preview-canvas{background:#151515}
 html[data-theme="minimal"] .soft-btn,html[data-theme="minimal"] .icon-btn{background:#242424}
 html[data-theme="minimal"] .primary-btn{background:#666;border-color:#888;color:#fff}
@@ -2167,7 +2189,7 @@ body{background:var(--nt-void)}
  padding:0 .12em;font-style:italic;box-decoration-break:clone;-webkit-box-decoration-break:clone;
 }
 .paper-field:hover{background:#d8c7ab78}
-.paper-field:focus{outline:1px solid #a36d50;background:#fff9ed;color:#2b241e}
+.paper-field:focus,.paper-field.is-editing{outline:1px solid #a36d50;background:#fff9ed;color:#2b241e}
 .paper-field:empty:before{color:#8d7f6d}
 .code-picker-field{
  background:#d8c7ab55!important;border-bottom-color:#ad7d5f!important;color:#5f432b!important;
@@ -2464,7 +2486,9 @@ html[data-theme="retro"] .paper-section.header,
 html[data-theme="retro"] .paper-section.title,
 html[data-theme="retro"] .paper-section.stamp{font-family:"Courier New","Liberation Mono",monospace}
 html[data-theme="retro"] .paper-field{background:#ffffcc;color:#000;border-bottom:1px dotted #000;box-shadow:none}
-html[data-theme="retro"] .paper-field:focus{outline:1px dotted #000;background:#fff}
+html[data-theme="retro"] .paper-field:focus,
+html[data-theme="retro"] .paper-field.is-editing{outline:1px dotted #000;background:#fff;color:#000}
+html[data-theme="retro"] .paper-field.is-editing::after{width:1px;background:#000}
 html[data-theme="retro"] .toast{background:#ffffe1;color:#000;border:0;box-shadow:inset 1px 1px #fff,inset -1px -1px #404040,4px 4px 0 #0005}
 html[data-theme="retro"] .home-empty,
 html[data-theme="retro"] .no-results,
