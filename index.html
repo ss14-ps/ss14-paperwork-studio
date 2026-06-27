@@ -293,8 +293,21 @@ button{transition:background .12s ease,border-color .12s ease,color .12s ease,op
  .egg-character{display:none}.paper-stage{display:block}.paper{margin:0 auto}
 }
 @media(max-width:1080px){
- html,body{height:auto;min-height:100%;overflow:auto}
- .topbar{position:sticky;top:0}
+
+  html{
+    scroll-padding-top:calc(var(--topbar-h) + 8px);
+  }
+
+  .workspace{
+    padding-top:0;
+  }
+
+  .topbar{
+    position:sticky;
+    top:0;
+    z-index:30;
+  }
+  
  .workspace{height:auto;min-height:calc(100vh - var(--topbar-h));grid-template-columns:285px minmax(410px,1fr);grid-template-rows:minmax(600px,calc(100vh - var(--topbar-h))) minmax(620px,78vh);overflow:visible}
  .sidebar,.builder{height:calc(100vh - var(--topbar-h));min-height:600px}.preview{grid-column:1/-1;height:78vh;min-height:620px}
  .preview-canvas{padding:16px}
@@ -302,7 +315,12 @@ button{transition:background .12s ease,border-color .12s ease,color .12s ease,op
 @media(max-width:760px){
  :root{--topbar-h:auto}
  .topbar{min-height:58px;height:auto;padding:9px 10px;flex-wrap:wrap}.logo{width:38px;height:32px}.brand{min-width:0;flex:1}.brand strong{font-size:12px}.top-actions{width:100%;display:grid;grid-template-columns:repeat(4,1fr);margin-left:0}.soft-btn,.primary-btn{min-width:0;height:34px;padding:0 5px;font-size:7.5px}
- .workspace{display:grid;grid-template-columns:1fr;grid-template-rows:none;min-height:0}.sidebar,.builder,.preview{height:auto;min-height:610px;grid-column:1}.sidebar{min-height:620px}.builder{min-height:720px}.preview{min-height:650px}
+ .workspace{
+  display:grid;
+  grid-template-columns:1fr;
+  grid-template-rows:none;
+  min-height:0}
+  .sidebar,.builder,.preview{height:auto;min-height:610px;grid-column:1}.sidebar{min-height:620px}.builder{min-height:720px}.preview{min-height:650px}
  .builder-top.compact{position:sticky;top:0;z-index:4}.preview-bar{position:sticky;top:0;z-index:4}
  .paper{transform-origin:top center}.finder-head{position:sticky;top:0;z-index:3}
 }
@@ -367,7 +385,11 @@ button{transition:background .12s ease,border-color .12s ease,color .12s ease,op
 .fill-control input,.fill-control textarea,.editor input,.editor textarea,.modal input,.modal textarea,.modal select{border-color:#57513e;background:#191912;color:#eee7d3}
 .fill-control input:focus,.fill-control textarea:focus,.editor input:focus,.editor textarea:focus{border-color:#b49350;box-shadow:inset 2px 0 0 #b49350}
 .toolbar button,.field-formatbar button{border-color:#55513f;background:#25241b;color:#d2c7aa}.toolbar button:hover,.field-formatbar button:hover{border-color:#b49350;color:#f2dfad}
-@media(max-width:760px){.paper-section{font-size:13px}.paper-section.header{font-size:10.5px}.paper-section.title{font-size:12.5px}}
+@media(max-width:760px){
+  .paper-section{font-size:13px}
+  .paper-section.header{font-size:10.5px}
+  .paper-section.title{font-size:12.5px}
+}
 
 
 /* v1.5 — clearer theme selector; keyboard undo/redo retained */
@@ -431,7 +453,11 @@ html[data-theme="minimal"] .primary-btn{background:#666;border-color:#888;color:
 html[data-theme="minimal"] .theme-control,html[data-theme="minimal"] .sound-control{background:#202020;border-color:#494949}
 html[data-theme="minimal"] .sound-control[aria-pressed="true"]{background:#333;border-color:#bbb}
 html[data-theme="minimal"] .theme-control select{background:#181818;border-color:#555;color:#eee}
-@media(max-width:760px){.top-actions{grid-template-columns:repeat(2,minmax(0,1fr))}.theme-control{grid-column:1/-1;justify-content:space-between}.theme-control select{flex:1;max-width:180px}}
+@media(max-width:760px){
+  .top-actions{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .theme-control{grid-column:1/-1;justify-content:space-between}
+  .theme-control select{flex:1;max-width:180px}
+}
 
 .role-toolbar{margin:8px 0 11px;padding:9px;border:1px solid #4b4b42;background:#1c1d19}.role-toolbar-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:7px}.role-toolbar-head strong{font:700 8px ui-monospace,"Liberation Mono",monospace;letter-spacing:.12em;color:#b8a77f;text-transform:uppercase}.role-toolbar-head small{color:#777164;font:7px ui-monospace,"Liberation Mono",monospace}.role-buttons{display:flex;gap:5px;flex-wrap:wrap}.role-buttons button{border:1px solid #5d584c;background:#252620;color:#d1c7b5;padding:6px 8px;font:8px ui-monospace,"Liberation Mono",monospace}.role-buttons button.primary-role{border-color:var(--brass);color:#e5ce98}.role-picker-list{display:grid;gap:5px;margin-top:10px}.role-picker-item{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px;border:1px solid #4b4b42;background:#1b1c18}.role-picker-item strong{display:block;font-size:9px;color:#e4dccd}.role-picker-item small{display:block;margin-top:2px;color:#80796b;font:7px ui-monospace,"Liberation Mono",monospace}.role-picker-item button{border:1px solid #665f50;background:#24251f;color:#d3c8b2;padding:6px 8px;font:8px ui-monospace,"Liberation Mono",monospace}.profile-department-custom{width:100%;margin-top:5px}.participant-field{border-left:2px solid #6f654f;padding-left:8px}
 
@@ -449,7 +475,11 @@ html[data-theme="minimal"] .theme-control select{background:#181818;border-color
 .role-picker-note{padding:8px 9px;margin-bottom:8px;border:1px solid #48463e;background:#1c1d19;color:#8f887b;font-size:9px}
 .profile-freeform-note{margin-top:4px;color:#777166;font:7px ui-monospace,"Liberation Mono",monospace}.profile-grid input[list]{width:100%}
 .catalog-warning{position:fixed;right:14px;bottom:14px;z-index:80;max-width:340px;padding:9px 11px;border:1px solid #8b6546;background:#2a211a;color:#e1c7aa;font:8px ui-monospace,"Liberation Mono",monospace;box-shadow:0 8px 30px #0008}
-@media(max-width:760px){.participant-card{grid-template-columns:1fr}.participant-card-actions{justify-content:flex-start}.participants-panel-head{align-items:flex-start;flex-direction:column}}
+@media(max-width:760px){
+  .participant-card{grid-template-columns:1fr}
+  .participant-card-actions{justify-content:flex-start}
+  .participants-panel-head{align-items:flex-start;flex-direction:column}
+}
 
 
 /* v1.10 compact participants */
@@ -474,7 +504,12 @@ html[data-theme="minimal"] .theme-control select{background:#181818;border-color
 .role-picker-item strong{display:block;font-size:9px;color:#e4dccd}.role-picker-item small{display:block;margin-top:3px;color:#80796b;font:7px ui-monospace,"Liberation Mono",monospace}
 .role-picker-item button{border:1px solid #665f50;background:#24251f;color:#d3c8b2;padding:6px 8px;font:8px ui-monospace,"Liberation Mono",monospace}
 .role-picker-note{color:#8d8678;font:8px ui-monospace,"Liberation Mono",monospace;line-height:1.5}
-@media(max-width:760px){.participants-panel-head span{display:none}.participant-chip-value{max-width:135px}.participants-list{gap:4px}.role-picker-list{grid-template-columns:1fr}}
+@media(max-width:760px){
+  .participants-panel-head span{display:none}
+  .participant-chip-value{max-width:135px}
+  .participants-list{gap:4px}
+  .role-picker-list{grid-template-columns:1fr}
+}
 
 /* v1.13 — desktop hierarchy pass */
 :root{
@@ -1067,6 +1102,62 @@ html[data-theme="retro"] .result-card.active .result-desc,
 html[data-theme="retro"] .result-card.active .archive-ref,
 html[data-theme="retro"] .result-card.active .result-meta{color:#fff!important}
 @media(max-width:1280px){:root{--archive-w:300px;--editor-w:390px}.result-title{font-size:12.5px}.paper{width:510px}}
+
+@media(max-width:760px){
+
+  :root {
+    --topbar-h: 0;
+  }
+
+  .topbar {
+    min-height: 0;
+  }
+
+  .finder-head{
+    position:sticky;
+    padding-top: 260px;
+    top:0;
+    z-index:3
+  }
+
+  .top-actions {
+    background-color: #00000015;
+  }
+
+  .builder-top.compact{position:sticky;top:0;z-index:4}
+  .fill-workspace{overflow-y:auto;height:calc(100% - 54px)}
+  .preview-bar{position:sticky;top:0;z-index:4}
+  .preview-canvas{overflow-y:auto}
+  
+  .smart-section {
+  }
+
+  .sidebar,.builder,.preview{
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+  }
+
+  .preset-list .smart-list {
+    height: 700px;
+    min-height: 700px;
+    max-height: 800px;
+    padding-top: 100px;
+  }
+
+  .builder .fill-workspace,
+  .builder .manual-workspace{
+    flex:1;
+    overflow-y:auto;
+    min-height:0;
+  }
+  .preview .preview-canvas{
+    flex:1;
+    overflow-y:auto;
+    min-height:0;
+    padding: 0;
+  }
+}
 
 </style>
 </head>
