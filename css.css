@@ -464,6 +464,10 @@ html.app-booting *,html.theme-switching *{transition:none!important;animation:no
     line-height: 1.5
 }
 
+.empty-compact {
+    min-height: 55px
+}
+
 
 .sidebar-footer {
     display: grid;
@@ -1183,6 +1187,10 @@ html.app-booting *,html.theme-switching *{transition:none!important;animation:no
     font-family: ui-monospace, "Liberation Mono", monospace
 }
 
+.import-plain-text {
+    min-height: 260px
+}
+
 .modal-actions {
     display: flex;
     justify-content: flex-end;
@@ -1781,7 +1789,7 @@ button{transition:background .12s ease,border-color .12s ease,color .12s ease,op
     top:0;
     z-index:30;
   }
-  
+
  .workspace{height:auto;min-height:calc(100vh - var(--topbar-h));grid-template-columns:285px minmax(410px,1fr);grid-template-rows:minmax(600px,calc(100vh - var(--topbar-h))) minmax(620px,78vh);overflow:visible}
  .sidebar,.builder{height:calc(100vh - var(--topbar-h));min-height:600px}.preview{grid-column:1/-1;height:78vh;min-height:620px}
  .preview-canvas{padding:16px}
@@ -2602,7 +2610,7 @@ html[data-theme="retro"] .result-card.active .result-meta{color:#fff!important}
   .fill-workspace{overflow-y:auto;height:calc(100% - 54px)}
   .preview-bar{position:sticky;top:0;z-index:4}
   .preview-canvas{overflow-y:auto}
-  
+
   .smart-section {
   }
 

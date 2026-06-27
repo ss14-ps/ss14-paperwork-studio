@@ -996,7 +996,7 @@ function renderFields(){
  root.innerHTML=fields.length?fields.map(f=>{
   if(f.key==="department_code")return `<div class="dept-summary"><div><strong>${esc(t("departmentCode"))}: ${esc(departmentCodeValue())}</strong><small>${esc(t("departmentRoute"))}</small></div><button type="button" data-open-department>${esc(t("edit"))}</button></div>`;
   return `<div class="field-row"><label><span>${esc(f.label)}</span>${isRequired(f)?`<span>${t("required")}</span>`:""}</label><input data-quick-key="${esc(f.key)}" value="${esc(current.values[f.key]||"")}" placeholder="${esc(f.fallback||f.label)}"></div>`;
- }).join(""):`<div class="empty" style="min-height:55px">${t("noFields")}</div>`;
+ }).join(""):`<div class="empty empty-compact">${t("noFields")}</div>`;
  root.querySelectorAll("[data-quick-key]").forEach(i=>i.oninput=e=>updateField(e.target.dataset.quickKey,e.target.value));
  root.querySelectorAll("[data-open-department]").forEach(b=>b.onclick=openDepartmentPicker);
 }
@@ -1545,7 +1545,7 @@ function parseImportedDocument(raw){
  }else result=[{id:uid("text"),type:"text",labelRu:"Импортированный документ",content:fieldifyImported(text,values)}];return {blocks:result,values};
 }
 function openTextImport(){
- modal(`<h3>Импорт документа из SS14</h3><div class="copy-editor-note">Вставьте готовую разметку. Редактор распознает основные разделы и обязательные поля, а всё нераспознанное сохранит без изменений.</div><textarea id="importPlainText" style="min-height:260px" placeholder="Вставьте документ сюда…"></textarea><div class="modal-actions"><button id="modalCancel">Отмена</button><button class="primary-btn" id="applyTextImport">Импортировать</button></div>`);
+ modal(`<h3>Импорт документа из SS14</h3><div class="copy-editor-note">Вставьте готовую разметку. Редактор распознает основные разделы и обязательные поля, а всё нераспознанное сохранит без изменений.</div><textarea class="import-plain-text" id="importPlainText" placeholder="Вставьте документ сюда…"></textarea><div class="modal-actions"><button id="modalCancel">Отмена</button><button class="primary-btn" id="applyTextImport">Импортировать</button></div>`);
  document.getElementById("modalCancel").onclick=closeModal;document.getElementById("applyTextImport").onclick=async()=>{const raw=document.getElementById("importPlainText").value;if(!raw.trim())return;const parsed=parseImportedDocument(raw),name=prompt("Название документа","Импортированный документ")||"Импортированный документ";const p={id:uid("custom"),group:"custom",builtin:false,name:{ru:name},variants:{ru:parsed.blocks},descriptionRu:""};customTemplates.unshift(p);currentPresetId=p.id;current={name:clone(p.name),variants:clone(p.variants),values:parsed.values,profileId:null};selectedBlockId=parsed.blocks[0]?.id||null;builderMode="manual";await persistUserContent();closeModal();renderAll();showToast("Документ импортирован")};
 }
 
