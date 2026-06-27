@@ -13,7 +13,6 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 [hidden]{display:none!important}
 html.app-booting body{visibility:hidden}
 html.app-booting *,html.theme-switching *{transition:none!important;animation:none!important}
-@keyframes typing-caret{0%,49%{opacity:1}50%,100%{opacity:.18}}
 
 .topbar {
     height:56px;
@@ -1062,17 +1061,6 @@ html.app-booting *,html.theme-switching *{transition:none!important;animation:no
     color: #2b241e
 }
 
-.paper-field.is-editing::after {
-    content: "";
-    display: inline-block;
-    width: 2px;
-    height: 1em;
-    margin-left: 3px;
-    background: #8e5c3d;
-    vertical-align: -.12em;
-    animation: typing-caret 1s steps(1, end) infinite
-}
-
 .paper-field.missing {
     border-bottom-color: #d88a2d;
     background: #f1ad451c
@@ -1962,9 +1950,10 @@ html[data-theme="minimal"] .action-chip.active{background:#d8d8d8;color:#222}
 html[data-theme="minimal"] .phrase-hotbar-label::before{background:#888}
 html[data-theme="minimal"] .phrase-hotbar-items button{border-left-color:#666}
 html[data-theme="minimal"] .paper-field{border-bottom-color:#888;background:#8881;color:#444}
+html[data-theme="minimal"] .paper-choice{border-bottom-color:#777;background:#7771;color:#222}
 html[data-theme="minimal"] .paper-field:focus,
 html[data-theme="minimal"] .paper-field.is-editing{outline-color:#777;background:#fff;color:#222}
-html[data-theme="minimal"] .paper-field.is-editing::after{background:#333}
+html[data-theme="minimal"] .paper-choice:hover,html[data-theme="minimal"] .paper-choice:focus{outline-color:#777;background:#fff;color:#111}
 html[data-theme="minimal"] .preview-canvas{background:#151515}
 html[data-theme="minimal"] .soft-btn,html[data-theme="minimal"] .icon-btn{background:#242424}
 html[data-theme="minimal"] .primary-btn{background:#666;border-color:#888;color:#fff}
@@ -2104,9 +2093,12 @@ body{background:var(--nt-void)}
 .dossier-kicker span{padding:3px 6px;border:1px solid #5b523f;background:#1a1b17;color:#c9b071}
 .dossier-title{display:block!important;margin:0;color:#f3ebdc;font:800 15px/1.25 "Liberation Sans",Arial,sans-serif}
 .dossier-summary{margin-top:5px;color:#a8a08f;font-size:10px;line-height:1.35}
-.dossier-actions{display:flex;justify-content:flex-end;gap:5px;flex-wrap:wrap;max-width:180px}
+.dossier-actions{display:flex;justify-content:flex-end;gap:5px;flex-wrap:wrap;max-width:230px}
 .dossier-actions button,.brief-tools button{height:28px;border:1px solid #675d4b;background:#20211c;color:#cabfa9;padding:0 8px;font:700 7.5px ui-monospace,"Liberation Mono",monospace}
 .dossier-actions button:hover{border-color:var(--nt-gold);color:#ffe4a8}
+.variant-control{display:flex;align-items:center;gap:6px;height:28px;border:1px solid #675d4b;background:#1a1b17;padding:0 6px;color:#cabfa9;font:700 7.5px ui-monospace,"Liberation Mono",monospace;letter-spacing:.08em;text-transform:uppercase}
+.variant-control span{color:#9f927d}
+.variant-control select{width:118px;height:22px;border:1px solid #5d5445;background:#20211c;color:#f0e3c8;padding:0 4px;font:700 8px ui-monospace,"Liberation Mono",monospace}
 .dossier-progress{display:grid;grid-template-columns:1fr auto;gap:9px;align-items:center}
 .status-pill{display:inline-flex;align-items:center;height:24px;padding:0 8px;border:1px solid #655c49;background:#1a1b17;color:#c8bda5;font:800 8px ui-monospace,"Liberation Mono",monospace;letter-spacing:.08em;text-transform:uppercase}
 .status-pill.ready{border-color:#65744e;color:#bfd69e}.status-pill.missing{border-color:#8c5946;color:#e0a58f}
@@ -2191,6 +2183,11 @@ body{background:var(--nt-void)}
 .paper-field:hover{background:#d8c7ab78}
 .paper-field:focus,.paper-field.is-editing{outline:1px solid #a36d50;background:#fff9ed;color:#2b241e}
 .paper-field:empty:before{color:#8d7f6d}
+.paper-choice{
+ cursor:pointer;border-bottom:1px dotted #9b7b58;background:#d8c7ab30;color:#4f3a29;
+ padding:0 .08em;box-decoration-break:clone;-webkit-box-decoration-break:clone;
+}
+.paper-choice:hover,.paper-choice:focus{outline:1px solid #a36d50;background:#fff4dc;color:#211812}
 .code-picker-field{
  background:#d8c7ab55!important;border-bottom-color:#ad7d5f!important;color:#5f432b!important;
 }
@@ -2255,6 +2252,9 @@ html[data-theme="minimal"] .document-brief{background:#202020;border-bottom-colo
 html[data-theme="minimal"] .dossier-card{gap:8px}
 html[data-theme="minimal"] .dossier-title{font-size:14px;font-weight:700}
 html[data-theme="minimal"] .dossier-actions button,html[data-theme="minimal"] .builder-profile-btn,html[data-theme="minimal"] .soft-btn,html[data-theme="minimal"] .primary-btn{box-shadow:none;background:#242424;border-color:#555;color:#eee}
+html[data-theme="minimal"] .variant-control{background:#202020;border-color:#555;color:#eee}
+html[data-theme="minimal"] .variant-control span{color:#aaa}
+html[data-theme="minimal"] .variant-control select{background:#181818;border-color:#555;color:#eee}
 html[data-theme="minimal"] .primary-btn{background:#5d5d5d}
 html[data-theme="minimal"] .result-card{min-height:48px;background:#202020}
 html[data-theme="minimal"] .result-card:hover,html[data-theme="minimal"] .result-card.active{transform:none;background:#282828;box-shadow:none}
@@ -2380,6 +2380,8 @@ html[data-theme="retro"] .editor select{
  background:#fff;color:#000;border:0;box-shadow:inset -1px -1px #fff,inset 1px 1px #404040,inset 2px 2px #808080;
 }
 html[data-theme="retro"] .theme-control label,
+html[data-theme="retro"] .variant-control,
+html[data-theme="retro"] .variant-control span,
 html[data-theme="retro"] .fill-control label,
 html[data-theme="retro"] .fill-section-title strong,
 html[data-theme="retro"] .participants-panel-head strong,
@@ -2389,6 +2391,8 @@ html[data-theme="retro"] .archive-ref,
 html[data-theme="retro"] .result-meta,
 html[data-theme="retro"] .smart-section-head strong,
 html[data-theme="retro"] .smart-section-head span{color:#000;font-family:Tahoma,"MS Sans Serif",Arial,sans-serif;letter-spacing:0}
+html[data-theme="retro"] .variant-control{background:#c0c0c0;border:0;box-shadow:inset -1px -1px #808080,inset 1px 1px #fff;padding:3px 5px;text-transform:none}
+html[data-theme="retro"] .variant-control select{height:22px;background:#fff;color:#000;border:0;box-shadow:inset -1px -1px #fff,inset 1px 1px #404040,inset 2px 2px #808080;font:11px Tahoma,"MS Sans Serif",Arial,sans-serif}
 html[data-theme="retro"] button,
 html[data-theme="retro"] .soft-btn,
 html[data-theme="retro"] .primary-btn,
@@ -2486,9 +2490,10 @@ html[data-theme="retro"] .paper-section.header,
 html[data-theme="retro"] .paper-section.title,
 html[data-theme="retro"] .paper-section.stamp{font-family:"Courier New","Liberation Mono",monospace}
 html[data-theme="retro"] .paper-field{background:#ffffcc;color:#000;border-bottom:1px dotted #000;box-shadow:none}
+html[data-theme="retro"] .paper-choice{background:#ffffcc;color:#000;border-bottom:1px dotted #000}
 html[data-theme="retro"] .paper-field:focus,
 html[data-theme="retro"] .paper-field.is-editing{outline:1px dotted #000;background:#fff;color:#000}
-html[data-theme="retro"] .paper-field.is-editing::after{width:1px;background:#000}
+html[data-theme="retro"] .paper-choice:hover,html[data-theme="retro"] .paper-choice:focus{outline:1px dotted #000;background:#fff;color:#000}
 html[data-theme="retro"] .toast{background:#ffffe1;color:#000;border:0;box-shadow:inset 1px 1px #fff,inset -1px -1px #404040,4px 4px 0 #0005}
 html[data-theme="retro"] .home-empty,
 html[data-theme="retro"] .no-results,
