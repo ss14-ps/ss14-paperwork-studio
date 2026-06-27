@@ -14,13 +14,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОД-КОД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]   [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОД-КОД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                     НАИМЕНОВАНИЕ ДОКУМЕНТА\n============================================="
+            "content": "=============================================\n[bold]НАИМЕНОВАНИЕ ДОКУМЕНТА[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -38,7 +38,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -60,13 +60,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#b8972d]███[/color][color=#1d7a1d]░███░░░░██░░░░[/color][color=#b8972d]                          ★ ★ ★[/color][color=#1d7a1d]\n░██░████░░░██░░░░           [head=3]Бланк документа[/head]\n░░█░██░██░░██░█░░                   [head=3]NanoTrasen[/head]\n░░░░██░░██░██░██░                        [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ЦК-КОМ}}[/bold]\n░░░░██░░░████░[/color][color=#b8972d]███[/color][color=#b8972d]                          ★ ★ ★[/color]"
+            "content": "[color=#b8972d]███[/color] [color=#1d7a1d]░███░░░░██░░░░[/color][color=#b8972d]                          ★ ★ ★[/color][color=#1d7a1d]\n░██░████░░░██░░░░           [head=3]Бланк документа[/head]\n░░█░██░██░░██░█░░                   [head=3]NanoTrasen[/head]\n░░░░██░░██░██░██░                        [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ЦК-КОМ}}[/bold]\n░░░░██░░░████░[/color] [color=#b8972d]███[/color][color=#b8972d]                          ★ ★ ★[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                         [bold]{{field:field_1|название|<название>}}[/bold]\n============================================="
+            "content": "=============================================\n[bold]{{field:field_1|название|<название>}}[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -84,7 +84,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                                [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -106,13 +106,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#b8972d]███[/color][color=#1d7a1d]░███░░░░██░░░░[/color][color=#b8972d]                          ★ ★ ★[/color][color=#1d7a1d]\n░██░████░░░██░░░░           [head=3]Бланк документа[/head]\n░░█░██░██░░██░█░░                   [head=3]NanoTrasen[/head]\n░░░░██░░██░██░██░                        [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ЦК-КОМ}}[/bold]\n░░░░██░░░████░[/color][color=#b8972d]███[/color][color=#b8972d]                          ★ ★ ★[/color]"
+            "content": "[color=#b8972d]███[/color] [color=#1d7a1d]░███░░░░██░░░░[/color][color=#b8972d]                          ★ ★ ★[/color][color=#1d7a1d]\n░██░████░░░██░░░░           [head=3]Бланк документа[/head]\n░░█░██░██░░██░█░░                   [head=3]NanoTrasen[/head]\n░░░░██░░██░██░██░                        [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ЦК-КОМ}}[/bold]\n░░░░██░░░████░[/color] [color=#b8972d]███[/color][color=#b8972d]                          ★ ★ ★[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n              [bold]ПРИКАЗ СЕКТОРАЛЬНОГО ШТАБА ЦК[/bold]\n============================================="
+            "content": "=============================================\n[bold]ПРИКАЗ СЕКТОРАЛЬНОГО ШТАБА ЦК[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -130,7 +130,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                                [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -152,13 +152,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#b8972d]███[/color][color=#1d7a1d]░███░░░░██░░░░[/color][color=#b8972d]                          ★ ★ ★[/color][color=#1d7a1d]\n░██░████░░░██░░░░           [head=3]Бланк документа[/head]\n░░█░██░██░░██░█░░                   [head=3]NanoTrasen[/head]\n░░░░██░░██░██░██░                        [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ЦК-КОМ}}[/bold]\n░░░░██░░░████░[/color][color=#b8972d]███[/color][color=#b8972d]                          ★ ★ ★[/color]"
+            "content": "[color=#b8972d]███[/color] [color=#1d7a1d]░███░░░░██░░░░[/color][color=#b8972d]                          ★ ★ ★[/color][color=#1d7a1d]\n░██░████░░░██░░░░           [head=3]Бланк документа[/head]\n░░█░██░██░░██░█░░                   [head=3]NanoTrasen[/head]\n░░░░██░░██░██░██░                        [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ЦК-КОМ}}[/bold]\n░░░░██░░░████░[/color] [color=#b8972d]███[/color][color=#b8972d]                          ★ ★ ★[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                [bold]ОТВЕТ СЕКТОРАЛЬНОГО ШТАБА ЦК[/bold]\n============================================="
+            "content": "=============================================\n[bold]ОТВЕТ СЕКТОРАЛЬНОГО ШТАБА ЦК[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -176,7 +176,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                                [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -198,13 +198,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#b8972d]███[/color][color=#1d7a1d]░███░░░░██░░░░[/color][color=#b8972d]                          ★ ★ ★[/color][color=#1d7a1d]\n░██░████░░░██░░░░           [head=3]Бланк документа[/head]\n░░█░██░██░░██░█░░                   [head=3]NanoTrasen[/head]\n░░░░██░░██░██░██░                        [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ЦК-КОМ}}[/bold]\n░░░░██░░░████░[/color][color=#b8972d]███[/color][color=#b8972d]                          ★ ★ ★[/color]"
+            "content": "[color=#b8972d]███[/color] [color=#1d7a1d]░███░░░░██░░░░[/color][color=#b8972d]                          ★ ★ ★[/color][color=#1d7a1d]\n░██░████░░░██░░░░           [head=3]Бланк документа[/head]\n░░█░██░██░░██░█░░                   [head=3]NanoTrasen[/head]\n░░░░██░░██░██░██░                        [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ЦК-КОМ}}[/bold]\n░░░░██░░░████░[/color] [color=#b8972d]███[/color][color=#b8972d]                          ★ ★ ★[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                [bold]ПРИКАЗ СЕКТОРАЛЬНОГО ШТАБА ЦК[/bold]\n============================================="
+            "content": "=============================================\n[bold]ПРИКАЗ СЕКТОРАЛЬНОГО ШТАБА ЦК[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -222,7 +222,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                                [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -244,13 +244,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]     [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                ЗАЯВЛЕНИЕ О НАЗНАЧЕНИИ НА ВРИО\n============================================="
+            "content": "=============================================\n[bold]ЗАЯВЛЕНИЕ О НАЗНАЧЕНИИ НА ВРИО[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -268,7 +268,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -290,13 +290,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]     [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                              ОТЧЁТ О РАБОТЕ ОТДЕЛА\n============================================="
+            "content": "=============================================\n[bold]ОТЧЁТ О РАБОТЕ ОТДЕЛА[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -314,7 +314,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -336,13 +336,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]     [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                          ОТЧЁТ ОБ УСТРАНЕНИИ НАРУШЕНИЙ\n============================================="
+            "content": "=============================================\n[bold]ОТЧЁТ ОБ УСТРАНЕНИИ НАРУШЕНИЙ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -360,7 +360,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -382,13 +382,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                     ОТЧЁТ О РАБОТЕ СОТРУДНИКА\n============================================="
+            "content": "=============================================\n[bold]ОТЧЁТ О РАБОТЕ СОТРУДНИКА[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -406,7 +406,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -428,13 +428,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]     [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                             ОТЧЁТ О СОБРАНИИ ГЛАВ\n============================================="
+            "content": "=============================================\n[bold]ОТЧЁТ О СОБРАНИИ ГЛАВ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -452,7 +452,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -474,13 +474,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                     ЗАЯВЛЕНИЕ О ТРУДОУСТРОЙСТВЕ\n============================================="
+            "content": "=============================================\n[bold]ЗАЯВЛЕНИЕ О ТРУДОУСТРОЙСТВЕ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -498,7 +498,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -520,13 +520,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                     ЗАЯВЛЕНИЕ ОБ УВОЛЬНЕНИИ\n============================================="
+            "content": "=============================================\n[bold]ЗАЯВЛЕНИЕ ОБ УВОЛЬНЕНИИ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -544,7 +544,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -566,13 +566,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                         ОБРАЩЕНИЕ\n============================================="
+            "content": "=============================================\n[bold]ОБРАЩЕНИЕ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -590,7 +590,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -612,13 +612,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                   ЗАЯВЛЕНИЕ НА ПОЛУЧЕНИЕ ДОСТУПА\n============================================="
+            "content": "=============================================\n[bold]ЗАЯВЛЕНИЕ НА ПОЛУЧЕНИЕ ДОСТУПА[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -636,7 +636,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -658,13 +658,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]     [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                          ПРИКАЗ ОБ УВОЛЬНЕНИИ\n============================================="
+            "content": "=============================================\n[bold]ПРИКАЗ ОБ УВОЛЬНЕНИИ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -682,7 +682,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -704,13 +704,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]     [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                      ПРИКАЗ О ЛИШЕНИИ ДОСТУПА\n============================================="
+            "content": "=============================================\n[bold]ПРИКАЗ О ЛИШЕНИИ ДОСТУПА[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -728,7 +728,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -750,13 +750,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]     [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n           РАЗРЕШЕНИЕ НА ПЕРЕДВИЖЕНИЕ ПРИ УГРОЗЕ\n============================================="
+            "content": "=============================================\n[bold]РАЗРЕШЕНИЕ НА ПЕРЕДВИЖЕНИЕ ПРИ УГРОЗЕ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -774,7 +774,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -796,13 +796,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]     [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                         ПРИКАЗ О ПООЩРЕНИИ\n============================================="
+            "content": "=============================================\n[bold]ПРИКАЗ О ПООЩРЕНИИ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -820,7 +820,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -842,13 +842,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ-ПД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ-ПД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                                      ГРАМОТА\n============================================="
+            "content": "=============================================\n[bold]ГРАМОТА[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -866,7 +866,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -888,13 +888,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]     [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n СВИДЕТЕЛЬСТВО О ПОВЫШЕНИИ КВАЛИФИКАЦИИ\n============================================="
+            "content": "=============================================\n[bold]СВИДЕТЕЛЬСТВО О ПОВЫШЕНИИ КВАЛИФИКАЦИИ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -912,7 +912,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -934,13 +934,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                 ЗАЯВЛЕНИЕ НА ПОЛУЧЕНИЕ СНАРЯЖЕНИЯ\n============================================="
+            "content": "=============================================\n[bold]ЗАЯВЛЕНИЕ НА ПОЛУЧЕНИЕ СНАРЯЖЕНИЯ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -958,7 +958,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -980,13 +980,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]     [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n      РАЗРЕШЕНИЕ НА ИСПОЛЬЗОВАНИЕ СНАРЯЖЕНИЯ\n============================================="
+            "content": "=============================================\n[bold]РАЗРЕШЕНИЕ НА ИСПОЛЬЗОВАНИЕ СНАРЯЖЕНИЯ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -998,13 +998,13 @@
             "id": "text-4",
             "type": "text",
             "labelRu": "Содержание документа",
-            "content": "Я, {{field:author_name|ФИО|(ФИО)}}, в должности главы отдела {{field:target_department|отдел|(отдел)}}, разрешаю использовать {{field:person_name_1|ФИО|(ФИО)}} в должности {{field:person_job_1|должность|(должность)}} следующее рабочее снаряжение отдела:\n"
+            "content": "Я, {{field:author_name|ФИО|(ФИО)}}, в должности главы отдела {{field:target_department|отдел|(отдел)}}, разрешаю использовать {{field:person_name_1|сотрудник|(сотрудник)}} в должности {{field:person_job_1|должность сотрудника|(должность)}} следующее рабочее снаряжение отдела:\n"
           },
           {
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -1026,13 +1026,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-ЮР}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-ЮР}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n         ЖАЛОБА НА НАРУШЕНИЕ ТРУДОВОГО ПОРЯДКА\n============================================="
+            "content": "=============================================\n[bold]ЖАЛОБА НА НАРУШЕНИЕ ТРУДОВОГО ПОРЯДКА[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -1050,7 +1050,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -1072,13 +1072,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ЮР-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ЮР-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n              ОТЧЁТ О ВНУТРЕННЕМ РАСЛЕДОВАНИИ\n============================================="
+            "content": "=============================================\n[bold]ОТЧЁТ О ВНУТРЕННЕМ РАСЛЕДОВАНИИ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -1096,7 +1096,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -1118,13 +1118,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ЮР}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]      [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ЮР}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n           РЕШЕНИЕ О НАЧАЛЕ СУДЕБНОГО ПРОЦЕССА\n============================================="
+            "content": "=============================================\n[bold]РЕШЕНИЕ О НАЧАЛЕ СУДЕБНОГО ПРОЦЕССА[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -1142,7 +1142,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -1164,13 +1164,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ЮР}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]      [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ЮР}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                СУДЕБНОЕ РЕШЕНИЕ\n============================================="
+            "content": "=============================================\n[bold]СУДЕБНОЕ РЕШЕНИЕ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -1182,13 +1182,13 @@
             "id": "text-4",
             "type": "text",
             "labelRu": "Содержание документа",
-            "content": "Я, {{field:author_name|ФИО|(ФИО)}}, в должности {{field:author_job|должность|(полное наименование должности)}}, выношу решение по судебному разбирательству в отношении {{field:person_name_1|ФИО|(ФИО)}}, в должности {{field:person_job_1|должность|(должность)}}.\nПредъявляемые правонарушения: {{field:line_field_1|нарушения|}}\n\nРешение приговора Службы Безопасности: {{field:line_field_2|решение|}}\n\nПроведенное до судебного разбирательства время ареста: {{field:line_field_3|время ареста|}}\n\nДанное лицо нарушило следующие статьи Корпоративного Закона: {{field:line_field_4|статьи|}}\n{{field:field_1|статьи|(статьи)}}\nС учетом всех смягчающих и отягчающих обстоятельств, правовое наказание данного лица представлено в виде: {{field:line_field_5|наказание|}}\n{{field:field_2|приговор|(приговор)}}\nАдминистративное наказание: {{field:line_field_6|Административное наказание|}}\n{{field:field_3|должность|(должность)}}\nСрок заключения под стражу отсчитывается с: {{field:line_field_7|начало срока|}}\n{{field:field_4|время начала заключения|(время начала заключения)}}\nМое решение обосновано {{field:field_5|тем, что|(тем, что)}}:\n"
+            "content": "Я, {{field:author_name|ФИО|(ФИО)}}, в должности {{field:author_job|должность|(полное наименование должности)}}, выношу решение по судебному разбирательству в отношении {{field:person_name_1|ФИО|(ФИО)}}, в должности {{field:person_job_1|должность|(должность)}}.\nПредъявляемые правонарушения: {{field:line_field_1|нарушения|}}\n\nРешение приговора Службы Безопасности: {{field:line_field_2|решение|}}\n\nПроведенное до судебного разбирательства время ареста: {{field:line_field_3|время ареста|}}\n\nДанное лицо нарушило следующие статьи Корпоративного Закона:\n{{field:field_1|статьи|(статьи)}}\nС учетом всех смягчающих и отягчающих обстоятельств, правовое наказание данного лица представлено в виде:\n{{field:field_2|приговор|(приговор)}}\nАдминистративное наказание: {{field:field_3|административное наказание|(административное наказание)}}\nСрок заключения под стражу отсчитывается с: {{field:field_4|время начала заключения|(время начала заключения)}}\nМое решение обосновано {{field:field_5|тем, что|(тем, что)}}:\n"
           },
           {
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -1210,13 +1210,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ЮР-КОД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ЮР-КОД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n           ЗАПРОС ПРЕДОСТАВЛЕНИЯ ДОКУМЕНТОВ\n============================================="
+            "content": "=============================================\n[bold]ЗАПРОС ПРЕДОСТАВЛЕНИЯ ДОКУМЕНТОВ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -1234,7 +1234,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -1256,13 +1256,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                     ЖАЛОБА НА ПРАВОНАРУШЕНИЕ\n============================================="
+            "content": "=============================================\n[bold]ЖАЛОБА НА ПРАВОНАРУШЕНИЕ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -1280,7 +1280,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -1302,13 +1302,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]      [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                                   ПРИГОВОР\n============================================="
+            "content": "=============================================\n[bold]ПРИГОВОР[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -1320,13 +1320,13 @@
             "id": "text-4",
             "type": "text",
             "labelRu": "Содержание документа",
-            "content": "Я, {{field:author_name|ФИО|(ФИО)}}, в должности {{field:field_1|должность|(должность)}}, выношу приговор согласно данным мне полномочиям в отношении {{field:person_name_1|ФИО|(ФИО)}}, в должности {{field:field_2|должность|(должность)}}.\nДанное лицо нарушило следующие статьи Корпоративного Закона: {{field:line_field_1|статьи|}}\n{{field:field_3|статьи|(статьи)}}\nС учетом всех смягчающих и отягчающих обстоятельств, правовое наказание данного лица представлено в виде: {{field:line_field_2|наказание|}}\n{{field:field_4|приговор|(приговор)}}\nАдминистративное наказание: {{field:line_field_3|Административное наказание|}}\n{{field:field_5|должность|(должность)}}\nСрок заключения под стражу отсчитывается с: {{field:field_6|время начала заключения|(время начала заключения)}}"
+            "content": "Я, {{field:author_name|ФИО|(ФИО)}}, в должности {{field:field_1|должность|(должность)}}, выношу приговор согласно данным мне полномочиям в отношении {{field:person_name_1|ФИО|(ФИО)}}, в должности {{field:field_2|должность|(должность)}}.\nДанное лицо нарушило следующие статьи Корпоративного Закона:\n{{field:field_3|статьи|(статьи)}}\nС учетом всех смягчающих и отягчающих обстоятельств, правовое наказание данного лица представлено в виде:\n{{field:field_4|приговор|(приговор)}}\nАдминистративное наказание: {{field:field_5|административное наказание|(административное наказание)}}\nСрок заключения под стражу отсчитывается с: {{field:field_6|время начала заключения|(время начала заключения)}}"
           },
           {
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -1348,13 +1348,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n             СВИДЕТЕЛЬСТВО О ПРАВОНАРУШЕНИИ\n============================================="
+            "content": "=============================================\n[bold]СВИДЕТЕЛЬСТВО О ПРАВОНАРУШЕНИИ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -1372,7 +1372,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -1394,13 +1394,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]      [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                     ОБВИНИТЕЛЬНОЕ ЗАКЛЮЧЕНИЕ\n============================================="
+            "content": "=============================================\n[bold]ОБВИНИТЕЛЬНОЕ ЗАКЛЮЧЕНИЕ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -1418,7 +1418,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -1440,13 +1440,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]      [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                     РАЗРЕШЕНИЕ НА ОБЫСК\n============================================="
+            "content": "=============================================\n[bold]РАЗРЕШЕНИЕ НА ОБЫСК[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -1464,7 +1464,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -1486,13 +1486,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]      [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                   ПРИКАЗ ОБ УДО ЗАКЛЮЧЕННОГО\n============================================="
+            "content": "=============================================\n[bold]ПРИКАЗ ОБ УДО ЗАКЛЮЧЕННОГО[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -1510,7 +1510,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -1532,13 +1532,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]      [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                  РАЗРЕШЕНИЕ НА НОШЕНИЕ ОРУЖИЯ\n============================================="
+            "content": "=============================================\n[bold]РАЗРЕШЕНИЕ НА НОШЕНИЕ ОРУЖИЯ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -1556,7 +1556,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -1578,13 +1578,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОД-МЕД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]   [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОД-МЕД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                ЗАКАЗ НА ПРОИЗВОДСТВО ПРОДУКТА\n============================================="
+            "content": "=============================================\n[bold]ЗАКАЗ НА ПРОИЗВОДСТВО ПРОДУКТА[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -1602,7 +1602,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -1624,13 +1624,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|МЕД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]     [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|МЕД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                     ОТЧЁТ ОБ ИЗУЧЕНИИ ОБЪЕКТА\n============================================="
+            "content": "=============================================\n[bold]ОТЧЁТ ОБ ИЗУЧЕНИИ ОБЪЕКТА[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -1648,7 +1648,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -1670,13 +1670,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|МЕД-ПД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|МЕД-ПД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n             РАЗРЕШЕНИЕ НА РЕЦЕПТУРНЫЙ ПРЕПАРАТ\n============================================="
+            "content": "=============================================\n[bold]РАЗРЕШЕНИЕ НА РЕЦЕПТУРНЫЙ ПРЕПАРАТ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -1694,7 +1694,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -1716,13 +1716,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|МЕД-ПД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|МЕД-ПД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                 ЗАКЛЮЧЕНИЕ О СОСТОЯНИИ ЗДОРОВЬЯ\n============================================="
+            "content": "=============================================\n[bold]ЗАКЛЮЧЕНИЕ О СОСТОЯНИИ ЗДОРОВЬЯ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -1734,13 +1734,13 @@
             "id": "text-4",
             "type": "text",
             "labelRu": "Содержание документа",
-            "content": "Пациент {{field:person_name_1|ФИО|(ФИО)}}, в должности {{field:person_job_1|должность|(должность)}}, был направлен на медицинское обследование в связи с {{field:reason|причина|(причина)}}. Был произведён полный осмотр пациента, проведены необходимые исследования и анализы.\nСостав врачебной комиссии: {{field:line_field_1|Состав врачебной комиссии|}}\n{{field:commission_members|врачи комиссии|(врач / должность)}}\nСостояние пациента при поступлении: {{field:line_field_2|состояние|}}\n\nПоставленный диагноз: {{field:line_field_3|Поставленный диагноз|}}\n\nПсихологическое состояние пациента: {{field:line_field_4|псих. состояние|}}\n\nОказанное лечение в ходе госпитализации: {{field:line_field_5|лечение|}}\n"
+            "content": "Пациент {{field:person_name_1|ФИО|(ФИО)}}, в должности {{field:person_job_1|должность|(должность)}}, был направлен на медицинское обследование в связи с {{field:reason|причина|(причина)}}. Был произведён полный осмотр пациента, проведены необходимые исследования и анализы.\nСостав врачебной комиссии:\n{{field:commission_members|врачи комиссии|(врач / должность)}}\nСостояние пациента при поступлении: {{field:line_field_2|состояние|}}\n\nПоставленный диагноз: {{field:line_field_3|Поставленный диагноз|}}\n\nПсихологическое состояние пациента: {{field:line_field_4|псих. состояние|}}\n\nОказанное лечение в ходе госпитализации: {{field:line_field_5|лечение|}}\n"
           },
           {
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -1762,13 +1762,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОД-МЕД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]   [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОД-МЕД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n РАСПОРЯЖЕНИЕ О МЕДИЦИНСКОМ ВМЕШАТЕЛЬСТВЕ\n============================================="
+            "content": "=============================================\n[bold]РАСПОРЯЖЕНИЕ О МЕДИЦИНСКОМ ВМЕШАТЕЛЬСТВЕ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -1786,7 +1786,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -1808,13 +1808,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-МЕД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-МЕД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                   ЗАПРОС НА ПРОВЕДЕНИЕ ЭВТАНАЗИИ\n============================================="
+            "content": "=============================================\n[bold]ЗАПРОС НА ПРОВЕДЕНИЕ ЭВТАНАЗИИ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -1832,7 +1832,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -1854,13 +1854,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|МЕД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]     [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|МЕД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                        СВИДЕТЕЛЬСТВО О СМЕРТИ\n============================================="
+            "content": "=============================================\n[bold]СВИДЕТЕЛЬСТВО О СМЕРТИ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -1878,7 +1878,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -1900,13 +1900,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|МЕД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]     [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|МЕД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                 РАЗРЕШЕНИЕ НА УТИЛИЗАЦИЮ ТЕЛА\n============================================="
+            "content": "=============================================\n[bold]РАЗРЕШЕНИЕ НА УТИЛИЗАЦИЮ ТЕЛА[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -1924,7 +1924,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -1947,13 +1947,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОД-МЕД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]   [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОД-МЕД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\nРАСПОРЯЖЕНИЕ О КАРАНТИНЕ / ИЗОЛЯЦИИ\n============================================="
+            "content": "=============================================\n[bold]РАСПОРЯЖЕНИЕ О КАРАНТИНЕ / ИЗОЛЯЦИИ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -1971,7 +1971,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -1994,13 +1994,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОД-МЕД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]   [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОД-МЕД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\nЗАКЛЮЧЕНИЕ О ДОПУСКЕ К СЛУЖБЕ\n============================================="
+            "content": "=============================================\n[bold]ЗАКЛЮЧЕНИЕ О ДОПУСКЕ К СЛУЖБЕ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -2018,7 +2018,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -2041,13 +2041,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОД-МЕД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]   [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОД-МЕД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\nАКТ ОТКАЗА ОТ МЕДИЦИНСКОЙ ПОМОЩИ\n============================================="
+            "content": "=============================================\n[bold]АКТ ОТКАЗА ОТ МЕДИЦИНСКОЙ ПОМОЩИ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -2065,7 +2065,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -2087,13 +2087,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ИНЖ-КОД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]   [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ИНЖ-КОД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                     РАЗРЕШЕНИЕ НА СТРОИТЕЛЬСТВО\n============================================="
+            "content": "=============================================\n[bold]РАЗРЕШЕНИЕ НА СТРОИТЕЛЬСТВО[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -2111,7 +2111,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -2133,13 +2133,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ИНЖ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]     [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ИНЖ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                     ОТЧЁТ О ТЕХНИЧЕСКОМ СОСТОЯНИИ\n============================================="
+            "content": "=============================================\n[bold]ОТЧЁТ О ТЕХНИЧЕСКОМ СОСТОЯНИИ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -2157,7 +2157,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -2179,13 +2179,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОД-ИНЖ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]   [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОД-ИНЖ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n       ЗАПРОС НА ПРОВЕДЕНИЕ СТРОИТЕЛЬНЫХ РАБОТ\n============================================="
+            "content": "=============================================\n[bold]ЗАПРОС НА ПРОВЕДЕНИЕ СТРОИТЕЛЬНЫХ РАБОТ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -2203,7 +2203,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -2226,13 +2226,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ИНЖ-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]   [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ИНЖ-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\nАКТ ПОВРЕЖДЕНИЯ ИМУЩЕСТВА СТАНЦИИ\n============================================="
+            "content": "=============================================\n[bold]АКТ ПОВРЕЖДЕНИЯ ИМУЩЕСТВА СТАНЦИИ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -2250,7 +2250,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -2272,13 +2272,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|НИО}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]     [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|НИО}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                    ОТЧЁТ ОБ ЭКСПЕРИМЕНТЕ\n============================================="
+            "content": "=============================================\n[bold]ОТЧЁТ ОБ ЭКСПЕРИМЕНТЕ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -2296,7 +2296,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -2318,13 +2318,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|НИО}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]     [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|НИО}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n         ПРИКАЗ О ПРИЗНАНИИ РАЗУМНОСТИ СУЩЕСТВА\n============================================="
+            "content": "=============================================\n[bold]ПРИКАЗ О ПРИЗНАНИИ РАЗУМНОСТИ СУЩЕСТВА[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -2342,7 +2342,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -2364,13 +2364,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОД-НИО}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]   [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОД-НИО}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n              ЗАПРОС НА ПРОВЕДЕНИЕ МОДЕРНИЗАЦИИ \n============================================="
+            "content": "=============================================\n[bold]ЗАПРОС НА ПРОВЕДЕНИЕ МОДЕРНИЗАЦИИ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -2388,7 +2388,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -2410,13 +2410,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|СНБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]     [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|СНБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                         ОТЧЁТ ОБ УТИЛИЗАЦИИ\n============================================="
+            "content": "=============================================\n[bold]ОТЧЁТ ОБ УТИЛИЗАЦИИ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -2434,7 +2434,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -2456,13 +2456,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОД-СНБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]   [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОД-СНБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n          ЗАКАЗ НА ЗАКУПКУ РЕСУРСОВ, СНАРЯЖЕНИЯ\n============================================="
+            "content": "=============================================\n[bold]ЗАКАЗ НА ЗАКУПКУ РЕСУРСОВ, СНАРЯЖЕНИЯ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -2480,7 +2480,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -2502,13 +2502,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|СБ-СНБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|СБ-СНБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                   ЗАКАЗ НА ЗАКУПКУ ВООРУЖЕНИЯ\n============================================="
+            "content": "=============================================\n[bold]ЗАКАЗ НА ЗАКУПКУ ВООРУЖЕНИЯ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -2526,7 +2526,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -2548,13 +2548,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|СРВ-ПД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|СРВ-ПД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n               СВИДЕТЕЛЬСТВО О ЗАКЛЮЧЕНИИ БРАКА\n============================================="
+            "content": "=============================================\n[bold]СВИДЕТЕЛЬСТВО О ЗАКЛЮЧЕНИИ БРАКА[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -2572,7 +2572,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -2594,13 +2594,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СРВ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СРВ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n               РАЗРЕШЕНИЕ НА РАСШИРЕНИЕ БРАКА\n============================================="
+            "content": "=============================================\n[bold]РАЗРЕШЕНИЕ НА РАСШИРЕНИЕ БРАКА[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -2612,13 +2612,13 @@
             "id": "text-4",
             "type": "text",
             "labelRu": "Содержание документа",
-            "content": "Я, {{field:author_name|ФИО|(ФИО)}}, в должности {{field:author_job|должность|(полное наименование должности)}}, даю своё разрешение на расширение брака, заключённого между:\n{{field:person_name_1|ФИО|(ФИО)}}, в должности {{field:person_job_1|должность|(должность)}}\n...\n{{field:person_name_2|ФИО|(ФИО)}}, в должности {{field:person_job_2|должность|(должность)}}\nДля вступления в данный брак новых супругов: {{field:line_field_1|новые супруги|}}\n{{field:person_name_3|ФИО|(ФИО)}}, в должности {{field:person_job_3|должность|(должность)}}\n...\n{{field:person_name_4|ФИО|(ФИО)}}, в должности {{field:person_job_4|должность|(должность)}}"
+            "content": "Я, {{field:author_name|ФИО|(ФИО)}}, в должности {{field:author_job|должность|(полное наименование должности)}}, даю своё разрешение на расширение брака, заключённого между:\n{{field:person_name_1|ФИО|(ФИО)}}, в должности {{field:person_job_1|должность|(должность)}}\n...\n{{field:person_name_2|ФИО|(ФИО)}}, в должности {{field:person_job_2|должность|(должность)}}\nДля вступления в данный брак новых супругов:\n{{field:person_name_3|новый супруг|(ФИО)}}, в должности {{field:person_job_3|должность|(должность)}}\n...\n{{field:person_name_4|ФИО|(ФИО)}}, в должности {{field:person_job_4|должность|(должность)}}"
           },
           {
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -2640,13 +2640,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|СРВ-ПД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|СРВ-ПД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n               СВИДЕТЕЛЬСТВО О РАСТОРЖЕНИИ БРАКА\n============================================="
+            "content": "=============================================\n[bold]СВИДЕТЕЛЬСТВО О РАСТОРЖЕНИИ БРАКА[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -2664,7 +2664,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -2686,13 +2686,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ-ЦК}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ-ЦК}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                  ЗАПРОС ЭВАКУАЦИОННОГО ШАТТЛА\n============================================="
+            "content": "=============================================\n[bold]ЗАПРОС ЭВАКУАЦИОННОГО ШАТТЛА[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -2710,7 +2710,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -2732,13 +2732,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ-ЦК}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ-ЦК}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                     ЗАПРОС РЕГИСТРАЦИИ ШАТТЛА\n============================================="
+            "content": "=============================================\n[bold]ЗАПРОС РЕГИСТРАЦИИ ШАТТЛА[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -2756,7 +2756,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -2778,13 +2778,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ-ЦК}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ-ЦК}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                 ЗАКАЗ СПЕЦИАЛЬНОГО СНАРЯЖЕНИЯ\n============================================="
+            "content": "=============================================\n[bold]ЗАКАЗ СПЕЦИАЛЬНОГО СНАРЯЖЕНИЯ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -2802,7 +2802,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -2824,13 +2824,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ-ЦК}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ-ЦК}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                              ОТЧЁТ О СИТУАЦИИ\n============================================="
+            "content": "=============================================\n[bold]ОТЧЁТ О СИТУАЦИИ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -2848,7 +2848,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -2870,13 +2870,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ-ЦК}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ-ЦК}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n                   ЗАПРОС НА ВЫЗОВ ЧЛЕНОВ ЦК, ДСО\n============================================="
+            "content": "=============================================\n[bold]ЗАПРОС НА ВЫЗОВ ЧЛЕНОВ ЦК, ДСО[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -2894,7 +2894,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -2916,13 +2916,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ-ЦК}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ-ЦК}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n              ЗАПРОС УСТАНОВЛЕНИЯ УРОВНЯ УГРОЗЫ\n============================================="
+            "content": "=============================================\n[bold]ЗАПРОС УСТАНОВЛЕНИЯ УРОВНЯ УГРОЗЫ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -2940,7 +2940,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -2962,13 +2962,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ-ЦК}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ-ЦК}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n           ЗАПРОС НА ИЗМЕНЕНИЕ ЗАРАБОТНОЙ ПЛАТЫ\n============================================="
+            "content": "=============================================\n[bold]ЗАПРОС НА ИЗМЕНЕНИЕ ЗАРАБОТНОЙ ПЛАТЫ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -2986,7 +2986,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -3008,13 +3008,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ-ЦК}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ-ЦК}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n         ЗАПРОС ВНЕПЕРЕЧНЕВОГО ТРУДОУСТРОЙСТВА\n============================================="
+            "content": "=============================================\n[bold]ЗАПРОС ВНЕПЕРЕЧНЕВОГО ТРУДОУСТРОЙСТВА[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -3032,7 +3032,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -3054,13 +3054,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ-ЦК}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ-ЦК}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n               ЗАПРОС ПОВЫШЕНИЯ\n============================================="
+            "content": "=============================================\n[bold]ЗАПРОС ПОВЫШЕНИЯ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -3078,7 +3078,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -3100,13 +3100,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]     [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n    ПРИКАЗ О НАЗНАЧЕНИИ ВРИО ГЛАВЫ ОТДЕЛА    \n============================================="
+            "content": "=============================================\n[bold]ПРИКАЗ О НАЗНАЧЕНИИ ВРИО ГЛАВЫ ОТДЕЛА[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -3124,7 +3124,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -3146,13 +3146,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n   ЗАЯВЛЕНИЕ О ПЕРЕВОДЕ НА ДРУГУЮ ДОЛЖНОСТЬ  \n============================================="
+            "content": "=============================================\n[bold]ЗАЯВЛЕНИЕ О ПЕРЕВОДЕ НА ДРУГУЮ ДОЛЖНОСТЬ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -3170,7 +3170,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -3192,13 +3192,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]     [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n       ОРДЕР НА ПРЕДОСТАВЛЕНИЕ ДОСТУПА       \n============================================="
+            "content": "=============================================\n[bold]ОРДЕР НА ПРЕДОСТАВЛЕНИЕ ДОСТУПА[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -3216,7 +3216,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -3238,13 +3238,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n      ЗАЯВЛЕНИЕ НА ЗАМЕНУ КПК И ID-КАРТЫ     \n============================================="
+            "content": "=============================================\n[bold]ЗАЯВЛЕНИЕ НА ЗАМЕНУ КПК И ID-КАРТЫ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -3262,7 +3262,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -3284,13 +3284,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n    ЗАЯВЛЕНИЕ НА ПОЛУЧЕНИЕ КПК И ID-КАРТЫ    \n============================================="
+            "content": "=============================================\n[bold]ЗАЯВЛЕНИЕ НА ПОЛУЧЕНИЕ КПК И ID-КАРТЫ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -3308,7 +3308,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -3330,13 +3330,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|СБ-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|СБ-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n        ЗАПРОС АВАРИЙНЫХ КАРТ ДОСТУПА        \n============================================="
+            "content": "=============================================\n[bold]ЗАПРОС АВАРИЙНЫХ КАРТ ДОСТУПА[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -3354,7 +3354,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -3376,13 +3376,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-ЮР}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-ЮР}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n       АНОНИМНОЕ СООБЩЕНИЕ О НАРУШЕНИИ       \n============================================="
+            "content": "=============================================\n[bold]АНОНИМНОЕ СООБЩЕНИЕ О НАРУШЕНИИ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -3400,7 +3400,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -3422,13 +3422,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-ЮР}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-ЮР}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n          ЗАЯВЛЕНИЕ О НАРУШЕНИИ СРП          \n============================================="
+            "content": "=============================================\n[bold]ЗАЯВЛЕНИЕ О НАРУШЕНИИ СРП[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -3446,7 +3446,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -3468,13 +3468,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ЮР-КОД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ЮР-КОД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n       ЗАПРОС ПРЕДОСТАВЛЕНИЯ ОРИГИНАЛОВ      \n============================================="
+            "content": "=============================================\n[bold]ЗАПРОС ПРЕДОСТАВЛЕНИЯ ОРИГИНАЛОВ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -3492,7 +3492,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -3514,13 +3514,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ-КОД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]   [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ-КОД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n      ПРИКАЗ КАПИТАНА О ВЫПОЛНЕНИИ ЦЕЛИ      \n============================================="
+            "content": "=============================================\n[bold]ПРИКАЗ КАПИТАНА О ВЫПОЛНЕНИИ ЦЕЛИ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -3538,7 +3538,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -3560,13 +3560,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОД-КОД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]   [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОД-КОД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n     АКТ ПЕРЕДАЧИ СЛУЖЕБНОГО ОБОРУДОВАНИЯ    \n============================================="
+            "content": "=============================================\n[bold]АКТ ПЕРЕДАЧИ СЛУЖЕБНОГО ОБОРУДОВАНИЯ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -3584,7 +3584,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -3606,13 +3606,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]     [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n    РАЗРЕШЕНИЕ НА ПЕРЕДВИЖЕНИЕ ПРИ УГРОЗЕ    \n============================================="
+            "content": "=============================================\n[bold]РАЗРЕШЕНИЕ НА ПЕРЕДВИЖЕНИЕ ПРИ УГРОЗЕ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -3630,7 +3630,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -3652,13 +3652,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n      ОТЧЁТ О ПРОВЕДЁННОМ РАССЛЕДОВАНИИ      \n============================================="
+            "content": "=============================================\n[bold]ОТЧЁТ О ПРОВЕДЁННОМ РАССЛЕДОВАНИИ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -3676,7 +3676,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -3698,13 +3698,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n           МАТЕРИАЛЫ РАССЛЕДОВАНИЯ           \n============================================="
+            "content": "=============================================\n[bold]МАТЕРИАЛЫ РАССЛЕДОВАНИЯ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -3722,7 +3722,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -3744,13 +3744,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n       ОТЧЁТ О ВНУТРЕННЕМ РАССЛЕДОВАНИИ      \n============================================="
+            "content": "=============================================\n[bold]ОТЧЁТ О ВНУТРЕННЕМ РАССЛЕДОВАНИИ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -3768,7 +3768,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -3790,13 +3790,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n             РАЗРЕШЕНИЕ НА АРЕСТ             \n============================================="
+            "content": "=============================================\n[bold]РАЗРЕШЕНИЕ НА АРЕСТ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -3814,7 +3814,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -3836,13 +3836,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n             РАЗРЕШЕНИЕ НА ОБЫСК             \n============================================="
+            "content": "=============================================\n[bold]РАЗРЕШЕНИЕ НА ОБЫСК[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -3860,7 +3860,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -3882,13 +3882,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n             ПОКАЗАНИЯ СВИДЕТЕЛЯ             \n============================================="
+            "content": "=============================================\n[bold]ПОКАЗАНИЯ СВИДЕТЕЛЯ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -3906,7 +3906,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -3928,13 +3928,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n               ПРОТОКОЛ ДОПРОСА              \n============================================="
+            "content": "=============================================\n[bold]ПРОТОКОЛ ДОПРОСА[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -3952,7 +3952,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -3975,13 +3975,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\nАКТ ИЗЪЯТИЯ И ОПИСИ ИМУЩЕСТВА\n============================================="
+            "content": "=============================================\n[bold]АКТ ИЗЪЯТИЯ И ОПИСИ ИМУЩЕСТВА[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -3999,7 +3999,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -4022,13 +4022,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\nАКТ ПРИЁМА ВЕЩЕСТВЕННЫХ ДОКАЗАТЕЛЬСТВ\n============================================="
+            "content": "=============================================\n[bold]АКТ ПРИЁМА ВЕЩЕСТВЕННЫХ ДОКАЗАТЕЛЬСТВ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -4046,7 +4046,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -4069,13 +4069,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\nАКТ ПЕРЕДАЧИ ЗАКЛЮЧЁННОГО\n============================================="
+            "content": "=============================================\n[bold]АКТ ПЕРЕДАЧИ ЗАКЛЮЧЁННОГО[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -4093,7 +4093,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -4115,13 +4115,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n         ЗАПРОС ПЕРЕСМОТРА ПРИГОВОРА         \n============================================="
+            "content": "=============================================\n[bold]ЗАПРОС ПЕРЕСМОТРА ПРИГОВОРА[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -4139,7 +4139,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -4161,13 +4161,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n    ЖАЛОБА НА НАРУШЕНИЕ ТРУДОВОГО ПОРЯДКА    \n============================================="
+            "content": "=============================================\n[bold]ЖАЛОБА НА НАРУШЕНИЕ ТРУДОВОГО ПОРЯДКА[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -4185,7 +4185,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -4208,13 +4208,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-ЮР}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-ЮР}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\nЗАЯВЛЕНИЕ О ВОЗМЕЩЕНИИ УЩЕРБА\n============================================="
+            "content": "=============================================\n[bold]ЗАЯВЛЕНИЕ О ВОЗМЕЩЕНИИ УЩЕРБА[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -4232,7 +4232,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -4255,13 +4255,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-ЮР}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-ЮР}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\nУВЕДОМЛЕНИЕ О КОНФЛИКТЕ ИНТЕРЕСОВ\n============================================="
+            "content": "=============================================\n[bold]УВЕДОМЛЕНИЕ О КОНФЛИКТЕ ИНТЕРЕСОВ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -4279,7 +4279,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -4301,13 +4301,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-СБ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\n        УНИВЕРСАЛЬНЫЙ ПРИКАЗ КАПИТАНА        \n============================================="
+            "content": "=============================================\n[bold]УНИВЕРСАЛЬНЫЙ ПРИКАЗ КАПИТАНА[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -4325,7 +4325,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -4348,13 +4348,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\nЗАЯВЛЕНИЕ НА ОСВОБОЖДЕНИЕ ОТ ОБЯЗАННОСТЕЙ\n============================================="
+            "content": "=============================================\n[bold]ЗАЯВЛЕНИЕ НА ОСВОБОЖДЕНИЕ ОТ ОБЯЗАННОСТЕЙ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -4372,7 +4372,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -4395,13 +4395,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\nГОСТЕВОЙ ПРОПУСК / ВРЕМЕННЫЙ ДОСТУП\n============================================="
+            "content": "=============================================\n[bold]ГОСТЕВОЙ ПРОПУСК / ВРЕМЕННЫЙ ДОСТУП[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -4419,7 +4419,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -4442,13 +4442,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]     [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\nПРИКАЗ О ЗАКРЫТИИ ЗОНЫ / ОГРАНИЧЕНИИ ПЕРЕМЕЩЕНИЯ\n============================================="
+            "content": "=============================================\n[bold]ПРИКАЗ О ЗАКРЫТИИ ЗОНЫ[/bold]\n[bold]ОГРАНИЧЕНИЕ ПЕРЕМЕЩЕНИЯ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -4466,7 +4466,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -4489,13 +4489,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\nРАЗРЕШЕНИЕ НА ПРОХОД В ОГРАНИЧЕННУЮ ЗОНУ\n============================================="
+            "content": "=============================================\n[bold]РАЗРЕШЕНИЕ НА ПРОХОД В ОГРАНИЧЕННУЮ ЗОНУ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -4513,7 +4513,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -4536,13 +4536,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ-КОД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]   [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|КОМ-КОД}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\nАКТ ВЫДАЧИ АВАРИЙНОГО СНАРЯЖЕНИЯ\n============================================="
+            "content": "=============================================\n[bold]АКТ ВЫДАЧИ АВАРИЙНОГО СНАРЯЖЕНИЯ[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -4560,7 +4560,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
@@ -4583,13 +4583,13 @@
             "id": "header-1",
             "type": "header",
             "labelRu": "Шапка NanoTrasen",
-            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
+            "content": "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]       [head=3]Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]         [head=3]NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]    [bold]{{field:station|станция|Station XX-000}} {{field:department_code|код|ПД-КОМ}}[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color]"
           },
           {
             "id": "title-2",
             "type": "title",
             "labelRu": "Название документа",
-            "content": "=============================================\nЗАЯВЛЕНИЕ НА ПЕРЕРЫВ ИЛИ ИЗМЕНЕНИЕ ГРАФИКА\n============================================="
+            "content": "=============================================\n[bold]ЗАЯВЛЕНИЕ НА ПЕРЕРЫВ ИЛИ ИЗМЕНЕНИЕ ГРАФИКА[/bold]\n============================================="
           },
           {
             "id": "details-3",
@@ -4607,7 +4607,7 @@
             "id": "stamp-5",
             "type": "stamp",
             "labelRu": "Место для печатей",
-            "content": "=============================================\n                            [italic]Место для печатей[/italic]"
+            "content": "=============================================\n[italic]Место для печатей[/italic]"
           }
         ]
       },
