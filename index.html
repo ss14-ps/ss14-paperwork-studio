@@ -1617,7 +1617,7 @@ document.querySelectorAll("[data-finder-mode]").forEach(btn=>btn.onclick=()=>{fi
 document.querySelectorAll("[data-builder-mode]").forEach(btn=>btn.onclick=()=>setBuilderMode(btn.dataset.builderMode));
 document.getElementById("themeSelect").onchange=event=>applyVisualTheme(event.target.value);
 document.getElementById("keySoundToggle").onclick=()=>{keySoundsEnabled=!keySoundsEnabled;localStorage.setItem("ss14-key-sounds",keySoundsEnabled?"on":"off");applyKeySoundToggle()};
-document.getElementById("repoLinkBtn").onclick=()=>{const url="https://github.com/ss14-ps/ss14-paperwork-studio";const opened=window.open(url,"_blank","noopener");if(!opened)window.location.href=url};
+document.getElementById("repoLinkBtn").onclick=()=>window.open("https://github.com/ss14-ps/ss14-paperwork-studio","_blank");
 applyKeySoundToggle();
 document.getElementById("builderProfilesBtn").onclick=openProfilesModal;
 document.getElementById("draftsBtn").onclick=openDraftsModal;
