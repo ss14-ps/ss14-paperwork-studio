@@ -54,6 +54,16 @@ html.app-booting *,html.theme-switching *{transition:none!important;animation:no
     letter-spacing: .12em
 }
 
+.repo-link {
+    margin-left: 8px;
+    color: #c6a35f;
+    text-decoration: none
+}
+
+.repo-link:hover {
+    text-decoration: underline
+}
+
 
 .archive-status {
     flex: 1;
