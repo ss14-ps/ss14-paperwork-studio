@@ -111,11 +111,12 @@ let activeTypeFilter="";
 let favoritePresetIds=readJSON("ss14-favorite-presets",[]);
 let savedDrafts=readJSON("ss14-saved-drafts",[]);
 let characterProfiles=readJSON("ss14-character-profiles",[]);
-let profileFileConnected=false;
 let customClauses=readJSON("ss14-custom-clauses",[]);
 let customFieldPresets=readJSON("ss14-custom-field-presets",{});
 let moreTypesOpen=false;
 let previewZoom=Math.max(80,Math.min(150,Number(localStorage.getItem("ss14-preview-zoom")||105)));
+let availableDocumentRoles,profileRoleMap,applyProfileToRole,roleToolbarHtml;
+let saveProfileForm,editProfileForm,saveTemplate,updateCustom,exportPreset,saveNamedDraft,deleteNamedDraft;
 
 const QUICK_ACTIONS=[
  {label:"Получить доступ",query:"получить доступ в помещение"},
@@ -289,19 +290,6 @@ function resetCurrent(){
  if(!confirm(t("confirmReset")))return;
  if(currentPresetId&&getPreset(currentPresetId))loadPreset(currentPresetId);
  else newDocument();
-}
-function switchLang(next){
- if(next===lang)return;
- const previous=lang;
- const profile=activeProfile();
- const oldProfileJob=profileJobLabel(profile,previous);
- const newProfileJob=profileJobLabel(profile,next);
- if(current.values.department_code)current.values.department_code=translateDepartmentRoute(current.values.department_code,next);
- if(profile&&current.values.author_job===oldProfileJob)current.values.author_job=newProfileJob;
- lang=next;document.documentElement.lang=lang;
- selectedBlockId=blocks()[0]?.id||null;
- document.querySelectorAll(".lang-switch button").forEach(b=>b.classList.toggle("active",b.dataset.lang===lang));
- saveState();renderAll();
 }
 function resolveTokens(text,values=current.values){
  return resolveChoiceTokens(text,values).replace(/\{\{field:([^|}]+)\|([^|}]*)\|([^}]*)\}\}/g,(_,key,label,fallback)=>{
@@ -845,29 +833,12 @@ function bindPhraseHotbar(root,insert){
  root.querySelectorAll("[data-hot-clause]").forEach(button=>button.onclick=()=>{const item=STANDARD_CLAUSES.find(entry=>entry.id===button.dataset.hotClause);if(item)insert(clauseText(item,lang))});
  const all=root.querySelector("[data-all-clauses]");if(all)all.onclick=()=>openClausesModal(insert);
 }
-function availableDocumentRoles(){
- const fields=getFields(),byKey=Object.fromEntries(fields.map(f=>[f.key,f]));
- const roles=[];
- const add=(id,label,nameKey,jobKey,departmentKey="")=>{if(byKey[nameKey]||byKey[jobKey])roles.push({id,label,nameKey:byKey[nameKey]?nameKey:"",jobKey:byKey[jobKey]?jobKey:"",departmentKey:departmentKey&&byKey[departmentKey]?departmentKey:""})};
- add("author","Составитель","author_name","author_job");
- add("applicant","Заявитель","applicant_name","applicant_job");
- add("subject",(/подозрев|арест|обыск/.test(normalizeSearch(current.name?.ru||""))?"Подозреваемый":"Участник"),"subject_name","subject_job");
- for(let i=1;i<=4;i++){const n=`person_name_${i}`,j=`person_job_${i}`;if(byKey[n]||byKey[j])add(`person${i}`,byKey[n]?.label||`Участник ${i}`,n,j)}
- [["recipient","Получатель"],["responsible","Ответственное лицо"],["giver","Передающая сторона"],["receiver","Получающая сторона"]].forEach(([key,label])=>{if(byKey[key])roles.push({id:key,label,nameKey:key,jobKey:"",departmentKey:""})});
- return roles;
-}
-function profileRoleMap(profile,role){const out={};if(role.nameKey)out[role.nameKey]=profile.fullName||"";if(role.jobKey)out[role.jobKey]=profileJobLabel(profile,lang);if(role.departmentKey)out[role.departmentKey]=profileDepartmentLabel(profile,lang);return out}
-function applyProfileToRole(profile,role,mode="empty"){
- const values=profileRoleMap(profile,role);Object.entries(values).forEach(([key,value])=>{if(value&&(mode==="replace"||!String(current.values[key]||"").trim()))current.values[key]=value});
- if(role.id==="author")current.profileId=profile.id;saveState();closeModal();renderAll();showToast(`${profile.label||profile.fullName}: ${role.label}`)
-}
 function chooseRoleForProfile(profile){
  const roles=availableDocumentRoles();
  if(roles.length===1){applyProfileToRole(profile,roles[0],"replace");return}
  modal(`<h3>${esc(profile.label||profile.fullName)}</h3><div class="profile-conflict">${esc(t("roleHint"))}</div><div class="role-picker-list">${roles.map(role=>`<div class="role-picker-item"><div><strong>${esc(role.label)}</strong><small>${esc([role.nameKey,role.jobKey].filter(Boolean).join(" + "))}</small></div><button data-role-id="${esc(role.id)}">${esc(t("profileApply"))}</button></div>`).join("")}</div><div class="modal-actions"><button id="roleCancel">${esc(t("cancel"))}</button></div>`);
  document.getElementById("roleCancel").onclick=openProfilesModal;document.querySelectorAll("[data-role-id]").forEach(button=>button.onclick=()=>applyProfileToRole(profile,roles.find(role=>role.id===button.dataset.roleId),"replace"));
 }
-function roleToolbarHtml(){const roles=availableDocumentRoles();if(!characterProfiles.length||!roles.length)return "";const active=activeProfile()||characterProfiles[0];return `<div class="role-toolbar"><div class="role-toolbar-head"><strong>${esc(t("assignRole"))}</strong><small>${esc(active?.label||active?.fullName||"")}</small></div><div class="role-buttons">${roles.map((role,index)=>`<button class="${index===0?"primary-role":""}" data-quick-role="${esc(role.id)}">${esc(role.label)}</button>`).join("")}<button data-open-role-profiles>…</button></div></div>`}
 function renderBlocks(){
  const list=document.getElementById("blockList");
  list.innerHTML=blocks().length?blocks().map((b,i)=>`
@@ -1029,12 +1000,10 @@ function editCopyBlock(id){
 
 async function loadProfilesFromFile(){
  characterProfiles=readJSON("ss14-character-profiles",characterProfiles);
- profileFileConnected=false;
  return true;
 }
 async function persistProfiles(){
  localStorage.setItem("ss14-character-profiles",JSON.stringify(characterProfiles));
- profileFileConnected=false;
  return true;
 }
 function exportProfiles(){
@@ -1078,38 +1047,6 @@ function chooseProfile(profile){
  document.getElementById("profileCancel").onclick=closeModal;
  document.getElementById("profileEmpty").onclick=()=>applyProfileValues(profile,"empty");
  document.getElementById("profileReplace").onclick=()=>applyProfileValues(profile,"replace");
-}
-async function saveProfileForm(id=null){
- const existing=characterProfiles.find(profile=>profile.id===id);
- const departmentSelect=document.getElementById("profileDepartment");
- const department=departmentSelect.value==="__custom__"?"":departmentSelect.value;
- const departmentCustom=departmentSelect.value==="__custom__"?document.getElementById("profileDepartmentCustom").value.trim():"";
- const jobSelect=document.getElementById("profileJob");
- const custom=jobSelect.value==="__custom__"?document.getElementById("profileJobCustom").value.trim():"";
- const profile={id:existing?.id||uid("profile"),label:document.getElementById("profileLabel").value.trim(),fullName:document.getElementById("profileFullName").value.trim(),department,departmentCustom,jobId:jobSelect.value==="__custom__"?"":jobSelect.value,jobCustom:custom};
- if(!profile.label)profile.label=profile.fullName||t("newProfile");
- if(existing)Object.assign(existing,profile);else characterProfiles.unshift(profile);
- await persistProfiles();openProfilesModal();
-}
-function profileJobOptions(department,currentValue=""){
- const list=jobEntries(department);
- const current=jobEntryByAny(department,currentValue);
- return `<option value="">${esc(t("profileChooseJob"))}</option>${list.map(job=>`<option value="${esc(job.id)}" ${current?.id===job.id?"selected":""}>${esc(job[lang]||job.ru)}</option>`).join("")}<option value="__custom__" ${currentValue&&!current?"selected":""}>${esc(t("profileJobCustom"))}</option>`;
-}
-function editProfileForm(id=null){
- const profile=characterProfiles.find(item=>item.id===id)||{};
- const legacyJob=profile.jobCustom||profile.jobId||profile.job||"";
- modal(`<h3>${esc(id?t("profileEdit"):t("newProfile"))}</h3><div class="profile-grid">
-  <div class="full"><label>${esc(t("profileLabel"))}</label><input id="profileLabel" value="${esc(profile.label||"")}"></div>
-  <div class="full"><label>${esc(t("profileName"))}</label><input id="profileFullName" value="${esc(profile.fullName||"")}"></div>
-  <div class="full"><label>${esc(t("profileDepartment"))}</label><select id="profileDepartment"><option value="">—</option>${DEPARTMENTS.filter(d=>d.code!=="ПД").map(d=>`<option value="${d.code}" ${departmentByAny(profile.department)?.code===d.code?"selected":""}>${departmentCode(d,lang)} — ${esc(d[lang])}</option>`).join("")}<option value="__custom__" ${profile.departmentCustom||(!departmentByAny(profile.department)&&profile.department)?"selected":""}>${esc(t("profileDepartmentCustom"))}</option></select><input id="profileDepartmentCustom" class="profile-department-custom" value="${esc(profile.departmentCustom||(!departmentByAny(profile.department)?profile.department||"":""))}" placeholder="${esc(t("profileDepartmentCustom"))}"></div>
-  <div class="full"><label>${esc(t("profileJob"))}</label><select id="profileJob">${profileJobOptions(profile.department||"",legacyJob)}</select><input id="profileJobCustom" class="profile-job-custom" value="${esc(profile.jobCustom||(!jobEntryByAny(profile.department,legacyJob)?legacyJob:"") )}" placeholder="${esc(t("profileJobCustom"))}"></div>
- </div><div class="modal-actions"><button id="profileFormCancel">${esc(t("cancel"))}</button><button class="primary-btn" id="profileFormSave">${esc(t("profileSave"))}</button></div>`);
- const department=document.getElementById("profileDepartment"),departmentCustom=document.getElementById("profileDepartmentCustom"),job=document.getElementById("profileJob"),custom=document.getElementById("profileJobCustom");
- const updateCustom=()=>{custom.hidden=job.value!=="__custom__";departmentCustom.hidden=department.value!=="__custom__"};
- const updateJobs=()=>{job.innerHTML=profileJobOptions(department.value==="__custom__"?"":department.value,"");updateCustom()};
- department.onchange=()=>{updateJobs();if(!departmentCustom.hidden)departmentCustom.focus()};job.onchange=()=>{updateCustom();if(!custom.hidden)custom.focus()};updateCustom();
- document.getElementById("profileFormCancel").onclick=openProfilesModal;document.getElementById("profileFormSave").onclick=()=>saveProfileForm(id);
 }
 async function deleteProfile(id){characterProfiles=characterProfiles.filter(profile=>profile.id!==id);if(current.profileId===id)current.profileId=null;await persistProfiles();openProfilesModal()}
 function openProfilesModal(){
@@ -1163,23 +1100,6 @@ function openDraft(draft){
  renderAll();
  showToast(t("draftOpened"));
 }
-function deleteNamedDraft(id){
- savedDrafts=savedDrafts.filter(d=>d.id!==id);
- localStorage.setItem("ss14-saved-drafts",JSON.stringify(savedDrafts));
- openDraftsModal();
- updateDraftIndicator();
-}
-function saveNamedDraft(){
- const suggested=current.name?.ru||t("document");
- const name=prompt(t("draftName"),suggested);
- if(!name)return;
- const draft=draftSnapshot(name.trim()||suggested);
- savedDrafts=[draft,...savedDrafts].slice(0,30);
- localStorage.setItem("ss14-saved-drafts",JSON.stringify(savedDrafts));
- updateDraftIndicator();
- showToast(t("draftSaved"));
- openDraftsModal();
-}
 function draftRow(draft,last=false){
  return `<div class="draft-row">
   <div class="draft-file">
@@ -1218,34 +1138,6 @@ function openDraftsModal(){
   button.onclick=()=>deleteNamedDraft(button.dataset.deleteDraft);
  });
 }
-async function saveTemplate(){
- modal(`<h3>${t("presetTitle")}</h3><label>${t("nameRu")}</label><input id="presetNameRu" value="${esc(current.name.ru||"")}"><label>${t("nameEn")}</label><input id="presetNameEn" value="${esc(current.name.en||"")}"><div class="modal-actions"><button id="modalCancel">${t("cancel")}</button><button class="primary-btn" id="modalSave">${t("save")}</button></div>`);
- document.getElementById("modalCancel").onclick=closeModal;
- document.getElementById("modalSave").onclick=async()=>{
-  const p={id:uid("custom"),group:"custom",builtin:false,name:{ru:document.getElementById("presetNameRu").value||I18N.ru.blank,en:document.getElementById("presetNameEn").value||I18N.en.blank},variants:clone(current.variants)};
-  customTemplates.unshift(p);currentPresetId=p.id;current.name=clone(p.name);
-  await persistUserContent();closeModal();renderAll();showToast(t("saved"));
- };
-}
-function saveAsPreset(){
- modal(`<h3>${t("presetTitle")}</h3><label>${t("nameRu")}</label><input id="presetNameRu" value="${esc(current.name.ru||"")}"><label>${t("nameEn")}</label><input id="presetNameEn" value="${esc(current.name.en||"")}"><div class="modal-actions"><button id="modalCancel">${t("cancel")}</button><button class="primary-btn" id="modalSave">${t("save")}</button></div>`);
- document.getElementById("modalCancel").onclick=closeModal;
- document.getElementById("modalSave").onclick=()=>{
-  const p={id:uid("custom"),group:"custom",builtin:false,name:{ru:document.getElementById("presetNameRu").value||I18N.ru.blank,en:document.getElementById("presetNameEn").value||I18N.en.blank},variants:clone(current.variants)};
-  customPresets.unshift(p);currentPresetId=p.id;current.name=clone(p.name);saveState();closeModal();renderAll();showToast(t("saved"));
- };
-}
-function updateCustom(){
- const p=customTemplates.find(x=>x.id===currentPresetId)||customPresets.find(x=>x.id===currentPresetId);
- if(!p){showToast(t("builtinUpdate"));return}
- p.name=clone(current.name);p.variants=clone(current.variants);
- if(customTemplates.includes(p))persistUserContent();else saveState();
- renderPresets();showToast(t("updated"));
-}
-function exportPreset(){
- const payload={format:"ss14-paperwork-preset",version:2,preset:{id:uid("imported"),group:"custom",builtin:false,name:current.name,variants:current.variants}};
- const blob=new Blob([JSON.stringify(payload,null,2)],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=(current.name.en||"ss14-preset").replace(/[^\w-]+/g,"_")+".json";a.click();URL.revokeObjectURL(a.href);
-}
 function importPreset(){
  modal(`<h3>${t("importTitle")}</h3><label>${t("pasteJson")}</label><textarea id="importJson"></textarea><div class="modal-actions"><button id="modalCancel">${t("cancel")}</button><button class="primary-btn" id="modalImport">${t("importPreset")}</button></div>`);
  document.getElementById("modalCancel").onclick=closeModal;
@@ -1259,8 +1151,6 @@ function importPreset(){
    ================================================================ */
 lang="ru";
 let customBlockPresets=readJSON("ss14-custom-block-presets",[]);
-let draftSyncTimer=null;
-let serverAutosave=null;
 let switchingDocument=false;
 let pendingStateSave=null;
 let pendingStateSaveTimer=null;
@@ -1269,8 +1159,6 @@ let pendingHistoryTimer=null;
 
 function currentRussianName(){return current.name?.ru||"Без названия"}
 function isCustomCurrent(){return !!(customTemplates.find(x=>x.id===currentPresetId)||customPresets.find(x=>x.id===currentPresetId))}
-function currentSignature(){return JSON.stringify({id:currentPresetId,variants:current.variants,values:current.values,profileId:current.profileId})}
-
 persistUserContent=async function(){
  localStorage.setItem("ss14-custom-clauses",JSON.stringify(customClauses));
  localStorage.setItem("ss14-custom-field-presets",JSON.stringify(customFieldPresets));
@@ -1279,8 +1167,6 @@ persistUserContent=async function(){
  return true;
 };
 
-function queueDraftFileSync(){return true}
-async function syncDraftsToFile(){return true}
 async function loadDraftsFromFile(){
  savedDrafts=readJSON("ss14-saved-drafts",savedDrafts);
  updateDraftIndicator();
@@ -1291,7 +1177,7 @@ function writeStateSave(payload=pendingStateSave){
  if(!payload)return;
  localStorage.setItem("ss14-last-draft",payload.draft);
  localStorage.setItem("ss14-custom-presets",payload.customPresets);
- updateDraftIndicator();queueDraftFileSync();
+ updateDraftIndicator();
 }
 function flushStateSave(){
  if(pendingStateSaveTimer)clearTimeout(pendingStateSaveTimer);
@@ -1450,8 +1336,8 @@ function openTextImport(){
  document.getElementById("modalCancel").onclick=closeModal;document.getElementById("applyTextImport").onclick=async()=>{const raw=document.getElementById("importPlainText").value;if(!raw.trim())return;const parsed=parseImportedDocument(raw),name=prompt("Название документа","Импортированный документ")||"Импортированный документ";const p={id:uid("custom"),group:"custom",builtin:false,name:{ru:name},variants:{ru:parsed.blocks},descriptionRu:""};customTemplates.unshift(p);currentPresetId=p.id;current={name:clone(p.name),variants:clone(p.variants),values:parsed.values,profileId:null};selectedBlockId=parsed.blocks[0]?.id||null;builderMode="manual";await persistUserContent();closeModal();renderAll();showToast("Документ импортирован")};
 }
 
-saveNamedDraft=function(){const suggested=currentRussianName(),name=prompt("Название черновика",suggested);if(!name)return;const draft=draftSnapshot(name.trim()||suggested);savedDrafts=[draft,...savedDrafts].slice(0,50);localStorage.setItem("ss14-saved-drafts",JSON.stringify(savedDrafts));queueDraftFileSync();updateDraftIndicator();showToast("Черновик сохранён");openDraftsModal()};
-deleteNamedDraft=function(id){savedDrafts=savedDrafts.filter(d=>d.id!==id);localStorage.setItem("ss14-saved-drafts",JSON.stringify(savedDrafts));queueDraftFileSync();openDraftsModal();updateDraftIndicator()};
+saveNamedDraft=function(){const suggested=currentRussianName(),name=prompt("Название черновика",suggested);if(!name)return;const draft=draftSnapshot(name.trim()||suggested);savedDrafts=[draft,...savedDrafts].slice(0,50);localStorage.setItem("ss14-saved-drafts",JSON.stringify(savedDrafts));updateDraftIndicator();showToast("Черновик сохранён");openDraftsModal()};
+deleteNamedDraft=function(id){savedDrafts=savedDrafts.filter(d=>d.id!==id);localStorage.setItem("ss14-saved-drafts",JSON.stringify(savedDrafts));openDraftsModal();updateDraftIndicator()};
 
 
 // Theme selection: archive is the default; minimal removes secondary visual detail.
@@ -1506,9 +1392,6 @@ function updateHistoryButtons(){
  const undo=document.getElementById("undoBtn"),redo=document.getElementById("redoBtn");
  if(undo)undo.disabled=historyIndex<=0;if(redo)redo.disabled=historyIndex<0||historyIndex>=historyEntries.length-1;
 }
-
-// Remove all remaining language controls and English-only labels from the live UI.
-document.querySelectorAll(".lang-switch").forEach(x=>x.remove());
 
 // Russian-only: language switch intentionally removed.
 document.getElementById("presetSearch").oninput=()=>{finderMode="find";document.querySelectorAll("[data-finder-mode]").forEach(b=>b.classList.toggle("active",b.dataset.finderMode==="find"));renderPresets()};
@@ -1909,7 +1792,6 @@ function updateHierarchyState(key){
   control.classList.toggle("missing",!filled);control.classList.toggle("filled",filled);
   const marker=control.querySelector(".field-required-dot,.field-done-dot");
   if(marker)marker.className=filled?"field-done-dot":"field-required-dot";
-  const text=control.querySelector(".field-required-text");if(text)text.textContent=filled?"заполнено":"обязательно";
  }
  updateParticipantPanelState();
 }

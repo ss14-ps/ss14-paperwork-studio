@@ -79,45 +79,11 @@ html.app-booting *,html.theme-switching *{transition:none!important;animation:no
 }
 
 
-.archive-status {
-    flex: 1;
-    color: #7e786b;
-    font: 9px ui-monospace, "Liberation Mono", monospace;
-    letter-spacing: .12em
-}
-
-
 .top-actions {
     display: flex;
     align-items: center;
     gap: 5px
 }
-
-.lang-switch {
-    display: flex;
-    border: 1px solid var(--line);
-    background: var(--panel)
-}
-
-.lang-switch button {
-    height: 30px;
-    border: 0;
-    border-right: 1px solid var(--line);
-    background: transparent;
-    padding: 0 9px;
-    color: #908979;
-    font: 700 9px ui-monospace, "Liberation Mono", monospace
-}
-
-.lang-switch button:last-child {
-    border-right: 0
-}
-
-.lang-switch button.active {
-    background: #e8e0d0;
-    color: #25261f
-}
-
 
 .soft-btn,
 .primary-btn,
@@ -187,20 +153,13 @@ html.app-booting *,html.theme-switching *{transition:none!important;animation:no
     min-height: 0
 }
 
-.scroll {
-    overflow: auto
-}
-
-
-
 .finder-head {
     padding: 13px 12px 10px;
     background: var(--panel);
     border-bottom: 1px solid var(--line)
 }
 
-.finder-head>.eyebrow,
-.builder-top .eyebrow {
+.finder-head>.eyebrow {
     display: none
 }
 
@@ -393,10 +352,6 @@ html.app-booting *,html.theme-switching *{transition:none!important;animation:no
     text-transform: uppercase
 }
 
-.meta-pill {
-    display: none
-}
-
 .fav-btn {
     position: absolute;
     right: 5px;
@@ -447,10 +402,6 @@ html.app-booting *,html.theme-switching *{transition:none!important;animation:no
 
 .catalog-row .fav-btn {
     top: 5px
-}
-
-.catalog-kind {
-    display: none
 }
 
 .custom-form-badge {
@@ -521,16 +472,6 @@ html.app-booting *,html.theme-switching *{transition:none!important;animation:no
     background: #1b1c19
 }
 
-.builder-top.compact h2 {
-    max-width: 170px;
-    margin: 0;
-    overflow: hidden;
-    color: #eee4d2;
-    font: 700 11px ui-monospace, "Liberation Mono", monospace;
-    text-overflow: ellipsis;
-    white-space: nowrap
-}
-
 .builder-mode-switch {
     display: flex;
     border: 1px solid var(--line)
@@ -566,46 +507,6 @@ html.app-booting *,html.theme-switching *{transition:none!important;animation:no
     padding: 12px;
     border-bottom: 1px solid var(--line);
     background: #252620
-}
-
-.brief-head {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 8px
-}
-
-.brief-ref {
-    margin-bottom: 5px;
-    color: var(--brass);
-    font: 7.5px ui-monospace, "Liberation Mono", monospace;
-    letter-spacing: .12em
-}
-
-.document-brief h3 {
-    margin: 0;
-    color: #eee4d2;
-    font-size: 12px;
-    line-height: 1.35
-}
-
-.brief-tools {
-    display: flex;
-    gap: 4px
-}
-
-.brief-tools button {
-    height: 27px;
-    border: 1px solid #5a5549;
-    background: transparent;
-    padding: 0 7px;
-    color: #c2b59f;
-    font: 8px ui-monospace, "Liberation Mono", monospace
-}
-
-.brief-tools button:hover {
-    border-color: var(--brass);
-    color: #ead4aa
 }
 
 
@@ -1077,10 +978,6 @@ html.app-booting *,html.theme-switching *{transition:none!important;animation:no
     max-width: 116px
 }
 
-.paper-section.header input[data-field-key="station"] {
-    max-width: 110px
-}
-
 .code-picker-field {
     min-width: 48px !important;
     max-width: 82px !important;
@@ -1520,10 +1417,6 @@ html.app-booting *,html.theme-switching *{transition:none!important;animation:no
         grid-template-columns: 265px 285px minmax(430px, 1fr)
     }
 
-    .archive-status {
-        display: none
-    }
-
     .brand {
         min-width: 178px
     }
@@ -1545,8 +1438,7 @@ html.app-booting *,html.theme-switching *{transition:none!important;animation:no
         z-index: 30
     }
 
-    .brand small,
-    .archive-status {
+    .brand small {
         display: none
     }
 
@@ -1600,7 +1492,7 @@ html.app-booting *,html.theme-switching *{transition:none!important;animation:no
 .topbar{height:58px}.workspace{height:calc(100vh - 58px);grid-template-columns:290px 320px minmax(480px,1fr)}
 .action-chips{display:block;overflow:visible}.filter-primary,.filter-more{display:flex;gap:4px;flex-wrap:wrap}.filter-more{padding-top:5px}.action-chip{padding:6px 9px;font-size:8.5px}
 .finder-head h2{font-size:15px}.smart-search input{font-size:11px}.result-title{font-size:11px}.result-desc{font-size:9px}
-.builder-top.compact h2{font-size:12px}.fill-control label{font-size:9px}.fill-control input,.fill-control textarea{font-size:11px}.fill-control input{height:35px}
+.fill-control label{font-size:9px}.fill-control input,.fill-control textarea{font-size:11px}.fill-control input{height:35px}
 .fill-section-title{display:flex;align-items:center;justify-content:space-between}.fill-section-title button{border:1px solid #5b5549;background:#23241f;color:#c4baa7;padding:4px 7px;font:8px ui-monospace,"Liberation Mono",monospace}
 .wording-actions{padding-bottom:7px}.phrase-hotbar{padding:0 12px 14px}.phrase-hotbar-label{margin-bottom:5px;color:#8f8778;font:700 8px ui-monospace,"Liberation Mono",monospace;letter-spacing:.11em;text-transform:uppercase}.phrase-hotbar-items{display:flex;gap:4px;overflow-x:auto;padding-bottom:3px;scrollbar-width:thin}.phrase-hotbar-items button{flex:0 0 auto;max-width:220px;border:1px solid #544f45;background:#1b1c19;color:#bdb4a3;padding:6px 8px;font:8px/1.25 ui-monospace,"Liberation Mono",monospace;text-align:left}.phrase-hotbar-items button:hover{border-color:#a18d69;color:#ead8b7}.phrase-hotbar-items .phrase-more{border-style:dashed;color:#c77b6f}.inline-phrase-menu{margin-top:8px;padding:8px 0;border-top:1px solid #48463e}.inline-phrase-menu .phrase-hotbar{padding:0}
 .smart-options{display:flex;gap:4px;flex-wrap:wrap;margin-top:5px}.smart-option{padding:5px 7px}.smart-option.smart-save{min-width:25px;color:#c7ad74}
@@ -1626,7 +1518,6 @@ html.app-booting *,html.theme-switching *{transition:none!important;animation:no
 .logo{width:43px;height:34px;font-size:11px}
 .brand{min-width:235px}.brand strong{font-size:14px}.brand small{font-size:8.5px}
 .top-actions{gap:7px}.soft-btn,.primary-btn,.icon-btn{height:37px;padding:0 13px;font-size:10px}
-.lang-switch button{height:35px;padding:0 11px;font-size:10px}
 .workspace{height:calc(100vh - 64px);grid-template-columns:320px 350px minmax(500px,1fr)}
 
 .finder-head{padding:16px 14px 12px}.finder-head h2{font-size:17px;margin-bottom:12px}
@@ -1664,9 +1555,9 @@ html.app-booting *,html.theme-switching *{transition:none!important;animation:no
 .group-syndicate.result-card:hover{background:linear-gradient(90deg,#361b1d,#292a24 42%)}
 .group-syndicate .catalog-index{width:45px;color:#cf6b66}
 
-.builder-top.compact{min-height:38px;padding:12px 13px}.builder-top.compact h2{max-width:205px;font-size:13px}
+.builder-top.compact{min-height:38px;padding:12px 13px}
 .builder-mode-switch button{height:32px;padding:0 9px;font-size:9px}
-.document-brief{padding:14px}.brief-ref{font-size:8.5px}.document-brief h3{font-size:14px}.brief-tools button{height:32px;padding:0 10px;font-size:9px}
+.document-brief{padding:14px}
 .fill-fields{gap:9px;padding:10px 14px 15px}.fill-section-title{display:flex;align-items:center;min-height:29px;margin:10px 0 3px;padding:0 0 5px 9px;border-left:3px solid #777164}.fill-section-title strong{font-size:9px}.fill-section-title button{margin-left:auto;height:27px;border:1px solid #59584e;background:#242520;padding:0 8px;color:#c8bfaf;font-size:8.5px}
 .fill-section-title.section-main{border-left-color:var(--ui-blue)}
 .fill-section-title.section-document{border-left-color:var(--ui-amber)}
@@ -1714,14 +1605,14 @@ html.app-booting *,html.theme-switching *{transition:none!important;animation:no
 /* v0.10 readability pass — normal desktop scale, still compact */
 .topbar{height:68px}.workspace{height:calc(100vh - 68px);grid-template-columns:335px 365px minmax(500px,1fr)}
 .logo{width:45px;height:36px;font-size:11.5px}.brand{min-width:245px}.brand strong{font-size:15px}.brand small{font-size:9px}
-.soft-btn,.primary-btn,.icon-btn{height:40px;padding:0 14px;font-size:10.5px}.lang-switch button{height:38px;font-size:10.5px}
+.soft-btn,.primary-btn,.icon-btn{height:40px;padding:0 14px;font-size:10.5px}
 .finder-head{padding:17px 15px 13px}.finder-head h2{font-size:18px}.smart-search{height:46px}.smart-search input{font-size:13px}.finder-tabs button{height:37px;font-size:10px}
 .action-chip{min-height:37px;font-size:10.5px;padding:7px 5px}
 .smart-section-head{padding:11px 14px 9px}.smart-section-head strong,.smart-section-head span{font-size:9.5px}
 .result-card{min-height:72px;padding:12px 39px 11px 15px}.result-title{font-size:13px}.result-desc{font-size:10.5px}.archive-ref,.result-meta{font-size:8.5px}
 .catalog-row{min-height:46px}.catalog-name{font-size:11.5px}.catalog-index{font-size:9.5px}
-.builder-top.compact{min-height:52px;padding:13px 14px}.builder-top.compact h2{font-size:14px;max-width:220px}.builder-mode-switch button{height:34px;font-size:9.5px}
-.document-brief{padding:15px}.document-brief h3{font-size:15px}.brief-ref{font-size:9px}.brief-tools button{height:34px;font-size:9.5px}
+.builder-top.compact{min-height:52px;padding:13px 14px}.builder-mode-switch button{height:34px;font-size:9.5px}
+.document-brief{padding:15px}
 .fill-fields{padding:11px 15px 16px}.fill-section-title{min-height:31px}.fill-section-title strong{font-size:9.5px}.fill-section-title button{height:29px;font-size:9px}
 .fill-control label{font-size:10.5px}.fill-control input,.fill-control textarea{font-size:13px}.fill-control input,.fill-code-button{height:42px}.fill-control textarea{min-height:90px}.fill-code-button{font-size:12px}
 .smart-option{min-height:31px;font-size:9.5px}.wording-actions button{min-height:38px;font-size:10px}
@@ -1749,7 +1640,7 @@ button{transition:background .12s ease,border-color .12s ease,color .12s ease,op
 .topbar{height:var(--topbar-h);padding:0 16px;gap:11px;background:#151612;border-bottom:1px solid #5b5548;position:relative;z-index:20}
 .logo{width:42px;height:34px;border:1px solid var(--red);font-size:10px;background:#191a16}
 .brand{min-width:255px}.brand strong{font-size:14px;letter-spacing:.16em}.brand small{font-size:8px;color:#817b6e;letter-spacing:.11em}
-.archive-status{display:none}.top-actions{margin-left:auto;gap:6px}
+.top-actions{margin-left:auto;gap:6px}
 .soft-btn,.primary-btn,.icon-btn{height:36px;padding:0 12px;font-size:9px;border-color:#4b4c42;background:#20211c}
 .soft-btn:hover,.icon-btn:hover{border-color:#766d5c;background:#282921;color:#f0e6d3}.primary-btn{min-width:122px;border-color:#c85a4f;background:var(--red);font-size:9.5px}.primary-btn:hover{background:var(--red-hover)}
 
@@ -1772,8 +1663,8 @@ button{transition:background .12s ease,border-color .12s ease,color .12s ease,op
 .home-empty{padding:12px;color:#777164;font-size:8px;text-align:center}
 
 /* Editor */
-.builder-top.compact{min-height:50px;padding:9px 13px;background:#191a16}.builder-top.compact>div:first-child{min-width:0;flex:1}.builder-top.compact h2{max-width:none;font-size:12px;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.builder-mode-switch{flex:0 0 auto}.builder-mode-switch button{height:30px;padding:0 9px;font-size:8px}.builder-mode-switch button.active{background:#ded6c7}
-.fill-workspace{background:#20211c}.document-brief{padding:9px 13px;background:#24251f;border-bottom-color:#46473d}.brief-head{align-items:center}.brief-ref{margin:0;font-size:7.5px;color:var(--brass)}.document-brief h3{display:none}.brief-description{margin-top:5px;color:#9c9586;font-size:8.5px;line-height:1.4}.brief-tools{display:flex;flex-wrap:wrap;justify-content:flex-end}.brief-tools button{height:28px;padding:0 7px;font-size:7.5px;background:#20211c}.brief-tools button.danger{border-color:#70443f;color:#d9857b}
+.builder-top.compact{min-height:50px;padding:9px 13px;background:#191a16}.builder-top.compact>div:first-child{min-width:0;flex:1}.builder-mode-switch{flex:0 0 auto}.builder-mode-switch button{height:30px;padding:0 9px;font-size:8px}.builder-mode-switch button.active{background:#ded6c7}
+.fill-workspace{background:#20211c}.document-brief{padding:9px 13px;background:#24251f;border-bottom-color:#46473d}
 .fill-fields{gap:9px;padding:10px 13px 13px}.fill-section-title{min-height:28px;margin:7px 0 1px;padding:0 0 5px;border-bottom-color:#47483e}.fill-section-title strong{font-size:8px}.fill-section-title button{height:26px;font-size:7.5px}
 .fill-control label{margin-bottom:5px;font-size:9px;color:#c0b7a6}.fill-control input,.fill-control textarea{padding:8px 9px;background:#171814;border-color:#4c4d43;font-size:11px}.fill-control input{height:37px}.fill-control textarea{min-height:78px;line-height:1.45}.fill-control input:focus,.fill-control textarea:focus{border-color:var(--brass);box-shadow:inset 2px 0 0 var(--brass)}.fill-code-button{height:37px;font-size:10.5px}
 .field-formatbar{display:flex;flex-wrap:wrap;gap:3px;margin:0 0 4px}.field-formatbar button{height:25px;min-width:27px;padding:0 6px;border:1px solid #484a40;background:#1a1b17;color:#aaa291;font:700 7.5px ui-monospace,"Liberation Mono",monospace}.field-formatbar button:hover{border-color:#958468;color:#eadbc0;background:#24251f}.field-formatbar .format-wide{padding:0 8px}
@@ -1839,15 +1730,13 @@ button{transition:background .12s ease,border-color .12s ease,color .12s ease,op
  .paper{transform-origin:top center}.finder-head{position:sticky;top:0;z-index:3}
 }
 @media(max-width:470px){
- .top-actions{grid-template-columns:repeat(2,1fr)}.workspace{font-size:13px}.builder-top.compact{align-items:flex-start;gap:8px;flex-direction:column}.builder-mode-switch{width:100%}.builder-mode-switch button{flex:1}.brief-head{align-items:flex-start;flex-direction:column}.brief-tools{justify-content:flex-start}.field-formatbar button{height:28px}.preview-zoom #zoomFit{display:none}.preview-canvas{padding:8px}
+ .top-actions{grid-template-columns:repeat(2,1fr)}.workspace{font-size:13px}.builder-top.compact{align-items:flex-start;gap:8px;flex-direction:column}.builder-mode-switch{width:100%}.builder-mode-switch button{flex:1}.field-formatbar button{height:28px}.preview-zoom #zoomFit{display:none}.preview-canvas{padding:8px}
 }
 
 
 /* v1.2 clarity pass */
 .paper:before,.paper:after{display:none!important}
 .document-brief{min-height:42px;padding:6px 10px;background:#20211c}
-.brief-head{justify-content:flex-end}
-.brief-tools{width:100%;justify-content:flex-end;gap:4px}
 .result-card{padding-top:10px}
 .archive-ref{opacity:.55}
 .result-desc{max-height:2.8em;overflow:hidden;font-size:8px;line-height:1.4}
@@ -1877,8 +1766,8 @@ button{transition:background .12s ease,border-color .12s ease,color .12s ease,op
 .action-chip:hover,.action-chip.active,.builder-mode-switch button.active{background:#ded4bb;color:#29281e;border-color:#ded4bb}
 .fill-code-button{border-color:#6e5b35;background:#242016;color:#d8ba77}
 .smart-option.on{border-color:#b49350;background:#3a3220;color:#eed8a8}
-.brief-tools button.danger,.danger,.dept-summary button{border-color:#705f39!important;background:#272116!important;color:#d8bd83!important}
-.brief-tools button.danger:hover,.danger:hover,.dept-summary button:hover{border-color:#b49350!important;color:#ffe5ad!important}
+.danger,.dept-summary button{border-color:#705f39!important;background:#272116!important;color:#d8bd83!important}
+.danger:hover,.dept-summary button:hover{border-color:#b49350!important;color:#ffe5ad!important}
 .editor-actions{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:6px!important}
 .editor-actions button,.editor-actions .danger{width:auto!important;min-width:0!important;min-height:34px!important;margin:0!important;flex:none!important}
 .paper{background:#eee8d8;color:#24241f;padding:26px 18px 42px}
@@ -1941,7 +1830,7 @@ html[data-theme="minimal"] .topbar{background:#181818;border-bottom-color:#444}
 html[data-theme="minimal"] .logo{display:none}
 html[data-theme="minimal"] .brand small{display:none}
 html[data-theme="minimal"] .workspace{background:#444}
-html[data-theme="minimal"] .result-desc,html[data-theme="minimal"] .archive-ref,html[data-theme="minimal"] .brief-ref{display:none}
+html[data-theme="minimal"] .result-desc,html[data-theme="minimal"] .archive-ref{display:none}
 html[data-theme="minimal"] .result-card{min-height:38px;padding-top:9px;padding-bottom:9px}
 html[data-theme="minimal"] .result-card,html[data-theme="minimal"] .catalog-row,html[data-theme="minimal"] .block-card{border-left-color:#666!important}
 html[data-theme="minimal"] .result-card.active,html[data-theme="minimal"] .catalog-row.active,html[data-theme="minimal"] .block-card.selected{border-left-color:#bbb!important}
@@ -1976,7 +1865,7 @@ html[data-theme="minimal"] .theme-control select{background:#181818;border-color
   .theme-control select{flex:1;max-width:180px}
 }
 
-.role-toolbar{margin:8px 0 11px;padding:9px;border:1px solid #4b4b42;background:#1c1d19}.role-toolbar-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:7px}.role-toolbar-head strong{font:700 8px ui-monospace,"Liberation Mono",monospace;letter-spacing:.12em;color:#b8a77f;text-transform:uppercase}.role-toolbar-head small{color:#777164;font:7px ui-monospace,"Liberation Mono",monospace}.role-buttons{display:flex;gap:5px;flex-wrap:wrap}.role-buttons button{border:1px solid #5d584c;background:#252620;color:#d1c7b5;padding:6px 8px;font:8px ui-monospace,"Liberation Mono",monospace}.role-buttons button.primary-role{border-color:var(--brass);color:#e5ce98}.role-picker-list{display:grid;gap:5px;margin-top:10px}.role-picker-item{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px;border:1px solid #4b4b42;background:#1b1c18}.role-picker-item strong{display:block;font-size:9px;color:#e4dccd}.role-picker-item small{display:block;margin-top:2px;color:#80796b;font:7px ui-monospace,"Liberation Mono",monospace}.role-picker-item button{border:1px solid #665f50;background:#24251f;color:#d3c8b2;padding:6px 8px;font:8px ui-monospace,"Liberation Mono",monospace}.profile-department-custom{width:100%;margin-top:5px}.participant-field{border-left:2px solid #6f654f;padding-left:8px}
+.role-picker-list{display:grid;gap:5px;margin-top:10px}.role-picker-item{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px;border:1px solid #4b4b42;background:#1b1c18}.role-picker-item strong{display:block;font-size:9px;color:#e4dccd}.role-picker-item small{display:block;margin-top:2px;color:#80796b;font:7px ui-monospace,"Liberation Mono",monospace}.role-picker-item button{border:1px solid #665f50;background:#24251f;color:#d3c8b2;padding:6px 8px;font:8px ui-monospace,"Liberation Mono",monospace}.participant-field{border-left:2px solid #6f654f;padding-left:8px}
 
 /* v1.11 — исправленные шапки и компактный список блоков */
 .build-badge{display:inline-flex;align-items:center;gap:6px;margin-left:10px;padding:3px 7px;border:1px solid #5a5448;color:#b9aa86;background:#20211d;font:700 7px ui-monospace,"Liberation Mono",monospace;letter-spacing:.08em;vertical-align:middle}
@@ -2094,7 +1983,7 @@ body{background:var(--nt-void)}
 .dossier-title{display:block!important;margin:0;color:#f3ebdc;font:800 15px/1.25 "Liberation Sans",Arial,sans-serif}
 .dossier-summary{margin-top:5px;color:#a8a08f;font-size:10px;line-height:1.35}
 .dossier-actions{display:flex;justify-content:flex-end;gap:5px;flex-wrap:wrap;max-width:230px}
-.dossier-actions button,.brief-tools button{height:28px;border:1px solid #675d4b;background:#20211c;color:#cabfa9;padding:0 8px;font:700 7.5px ui-monospace,"Liberation Mono",monospace}
+.dossier-actions button{height:28px;border:1px solid #675d4b;background:#20211c;color:#cabfa9;padding:0 8px;font:700 7.5px ui-monospace,"Liberation Mono",monospace}
 .dossier-actions button:hover{border-color:var(--nt-gold);color:#ffe4a8}
 .variant-control{display:flex;align-items:center;gap:6px;height:28px;border:1px solid #675d4b;background:#1a1b17;padding:0 6px;color:#cabfa9;font:700 7.5px ui-monospace,"Liberation Mono",monospace;letter-spacing:.08em;text-transform:uppercase}
 .variant-control span{color:#9f927d}
@@ -2112,7 +2001,6 @@ body{background:var(--nt-void)}
 .fill-control{position:relative;padding:2px 0 3px}
 .fill-control label{display:flex;align-items:center;gap:6px;margin-bottom:6px;color:#c8beac;font-size:9.5px;letter-spacing:.04em}
 .field-required-dot{width:6px;height:6px;background:#8b5948;box-shadow:0 0 0 1px #c5856f55}.field-done-dot{width:6px;height:6px;background:#75895e;box-shadow:0 0 0 1px #a9c78355}
-.field-required-text{display:none}
 .fill-control input,.fill-control textarea{border-color:#5d5849;background:#171914;color:#f0e7d8}
 .fill-control input{height:42px}.fill-control textarea{min-height:96px}
 .fill-control.required.missing input,.fill-control.required.missing textarea{border-color:#8b5948;box-shadow:inset 3px 0 0 #8b5948;background:#1d1715}
@@ -2399,7 +2287,6 @@ html[data-theme="retro"] .primary-btn,
 html[data-theme="retro"] .icon-btn,
 html[data-theme="retro"] .builder-profile-btn,
 html[data-theme="retro"] .dossier-actions button,
-html[data-theme="retro"] .brief-tools button,
 html[data-theme="retro"] .builder-mode-switch button,
 html[data-theme="retro"] .finder-tabs button,
 html[data-theme="retro"] .action-chip,
