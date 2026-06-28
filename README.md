@@ -26,6 +26,7 @@ SS14 Paperwork Studio сделан на HTML, CSS и JavaScript.
 
 - `index.html` - основное приложение.
 - `data/forms.json` - список форм.
+- `data/forms-data.js` - тот же список форм в виде preload-скрипта для запуска без сервера.
 - `data/departments.json`
 - `data/jobs.json`
 - `data/clauses.json`
